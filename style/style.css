@@ -28,4 +28,86 @@ body {
   padding-bottom: 3rem;
 }
 
+.top {
+  background-color: #F1EEEB;
+}
+.top__contacts {
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top__tel {
+  display: flex;
+  gap: 2.5rem;
+  font-size: 0.875rem;
+  align-items: center;
+}
+.top__tel-number {
+  font-weight: 700;
+}
+.top__tel-order-call {
+  text-transform: uppercase;
+}
+.top__other-contacts {
+  display: flex;
+  gap: 5rem;
+  font-size: 0.875rem;
+  align-items: center;
+}
+.top__locations {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+.top__socmedia {
+  display: flex;
+  align-items: center;
+}
+.top__socmedia-item {
+  padding-left: 0.75rem;
+}
+.top__socmedia-img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.header__menu {
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+}
+.header__nav {
+  padding-right: 5rem;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 3.5rem;
+}
+.header__nav-link {
+  color: #3B3B3B;
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  transition: all 0.5s ease-in;
+}
+.header__nav-link:hover {
+  color: #1A453E;
+  border-bottom: 1px solid #1A453E;
+}
+.header__menu-icons {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
 /*general styles*/
+body {
+  min-width: 320px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
