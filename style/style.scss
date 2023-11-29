@@ -1,1 +1,18 @@
-@import "./fonts"
+@import 'fonts';
+@import 'variables';
+@import 'mixins';
+@import 'extends';
+@import 'layout/header';
+@import 'layout/slider';
+@import 'layout/catalogue';
+@import 'layout/innovations';
+@import 'layout/production';
+@import 'layout/interiors';
+@import 'layout/projects';
+@import 'layout/blog';
+@import 'layout/about';
+@import 'layout/footer';
+
+.wrapper {
+  @extend %wrapper-paddings;
+}
