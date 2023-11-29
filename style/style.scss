@@ -13,6 +13,12 @@
 @import 'layout/about';
 @import 'layout/footer';
 
+
+/*general styles*/
+body {
+  @extend %main-font;
+}
+
 .wrapper {
   @extend %wrapper-paddings;
 }
