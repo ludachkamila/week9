@@ -1,40 +1,35 @@
-.main__projects {
-    margin-top: -4.5rem;
-}
-
 .projects__text {
-    width: 24.625rem;
-    height: 5.875rem;
-
-    h2 {
-        margin-top: -4.980rem;
-        font-size: 2.5rem;
-        line-height: 3rem;
-    }
-}
-
-.projects__carousel {
+    margin-bottom: 1.6rem;
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+  .projects__carousel {
     display: flex;
-    padding-top: 1.450rem;
-    gap: 0.437rem;
-    margin-bottom: 0.9rem;
-
-    .carousel {
+    gap: 0.44rem;
+    position: relative;
+      &-item {
+        position: relative;
         img {
-            width: 17.8125rem;
-            height: 25.875rem;
-            border-radius: 0.5rem;
+          border-radius: 0.5rem;
         }
-
         p {
-            width: 14.375rem;
-            height: 2.375rem;
-            margin-top: -3.770rem;
-            margin-left: 1rem;
-            color: $white;
-            font-size: 1rem;
-            line-height: 1.2rem;
+          position: absolute;
+          bottom: 1.3rem;
+          left: 1rem;
+          color: $white;
+          font-size: 1rem;
+          line-height: 1.2;
         }
-
-    }
-}
+      }
+      &-button {
+        position: absolute;
+        z-index: 2;
+        top: 42.5%;
+        &_left {
+          left: -2.5%;
+        }
+        &_right {
+          right: -2.5%;
+        }
+      }
+  }

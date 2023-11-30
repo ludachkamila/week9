@@ -105,39 +105,41 @@ body {
   gap: 1.5rem;
 }
 
-.main__projects {
-  margin-top: -4.5rem;
-}
-
 .projects__text {
-  width: 24.625rem;
-  height: 5.875rem;
-}
-.projects__text h2 {
-  margin-top: -4.98rem;
+  margin-bottom: 1.6rem;
   font-size: 2.5rem;
-  line-height: 3rem;
+  line-height: 1.2;
 }
 
 .projects__carousel {
   display: flex;
-  padding-top: 1.45rem;
-  gap: 0.437rem;
-  margin-bottom: 0.9rem;
+  gap: 0.44rem;
+  position: relative;
 }
-.projects__carousel .carousel img {
-  width: 17.8125rem;
-  height: 25.875rem;
+.projects__carousel-item {
+  position: relative;
+}
+.projects__carousel-item img {
   border-radius: 0.5rem;
 }
-.projects__carousel .carousel p {
-  width: 14.375rem;
-  height: 2.375rem;
-  margin-top: -3.77rem;
-  margin-left: 1rem;
+.projects__carousel-item p {
+  position: absolute;
+  bottom: 1.3rem;
+  left: 1rem;
   color: #FFFFFF;
   font-size: 1rem;
-  line-height: 1.2rem;
+  line-height: 1.2;
+}
+.projects__carousel-button {
+  position: absolute;
+  z-index: 2;
+  top: 42.5%;
+}
+.projects__carousel-button_left {
+  left: -2.5%;
+}
+.projects__carousel-button_right {
+  right: -2.5%;
 }
 
 .main__blog {
