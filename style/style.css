@@ -180,11 +180,6 @@ body {
   line-height: 1.2rem;
 }
 
-.main__about {
-  min-width: 100vw;
-  width: auto;
-}
-
 .about__1 {
   margin-top: 0.3rem;
   display: flexbox;
