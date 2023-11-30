@@ -80,6 +80,8 @@ body {
   justify-content: space-between;
   position: sticky;
   top: 0;
+  background-color: #FFFFFF;
+  z-index: 5;
 }
 .header__nav {
   padding-right: 5rem;
@@ -223,4 +225,4 @@ body {
   min-width: 320px;
   max-width: 1440px;
   margin: 0 auto;
-}/*# sourceMappingURL=style.css.map */
+}
