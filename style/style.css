@@ -143,24 +143,38 @@ body {
 }
 
 .main__blog {
-  width: 100vw;
+  margin-top: -0.6rem;
 }
-.main__blog .main__blog_head h2 {
+.main__blog h2 {
   font-size: 2.5rem;
   margin-bottom: 1.4rem;
 }
-.main__blog .main__blog_img {
-  width: 50vw;
-  min-width: 100vw;
+.main__blog_img {
   display: flex;
   gap: 0.5rem;
   justify-content: start;
+  position: relative;
 }
-.main__blog .blog img {
+.main__blog-item {
+  position: relative;
+}
+.main__blog-item img {
   height: 13.3125rem;
   width: 17.75rem;
 }
-.main__blog .blog p {
+.main__blog-button {
+  position: absolute;
+  z-index: 2;
+  top: 5rem;
+}
+.main__blog-button_left {
+  left: -2rem;
+}
+.main__blog-button_right {
+  right: 19.5rem;
+}
+
+.blog-item p {
   padding-top: 0.5rem;
   font-size: 1rem;
   line-height: 1.2rem;
