@@ -1,0 +1,119 @@
+.interiors__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1.3rem;
+
+  &-title {
+    font-size: 2.5rem;
+    line-height: 1.4;
+  }
+
+  &-link {
+    border-bottom: 1px solid $red;
+    margin-top: -0.3rem;
+    margin-right: 0.5rem;
+    transition: $transition;
+
+    &-text {
+      color: $grey;
+      font-size: 1rem;
+      &:hover {
+        color: $main-green;
+      }
+    }
+
+    &:hover {
+      border-bottom: 1px solid $main-green;
+    }
+  }
+}
+
+.interiors__grid {
+  display: grid;
+  grid-template-columns: 4.1fr 3.5fr 2.6fr;
+  grid-template-rows: 14.6rem 14.6rem 25.6rem;
+  grid-gap: 0.5rem;
+  grid-template-areas:
+            'item-1 item-2 item-3'
+            'item-4 item-2 item-3'
+            'item-4 item-5 item-5';
+
+  &-item {
+    color: $white;
+    position: relative;
+    &-1 {
+      grid-area: item-1;
+      background: url(../../assets/images/5-interiors/background-promo.svg);
+      padding-left: 1.5rem;
+      padding-bottom: 1.5rem;
+      line-height: 1.2;
+      display: flex;
+      align-items: flex-end;
+    }
+    &-2 {
+      grid-area: item-2;
+      background: url(../../assets/images/5-interiors/rectangle-143.svg);
+      background-position: center;
+    }
+    &-3 {
+      grid-area: item-3;
+      background: url(../../assets/images/5-interiors/rectangle-147.svg);
+      background-position: center;
+    }
+    &-4 {
+      grid-area: item-4;
+      background: url(../../assets/images/5-interiors/rectangle-144.svg);
+      background-position: center;
+    }
+    &-5 {
+      grid-area: item-5;
+      background: url(../../assets/images/5-interiors/rectangle-145.svg);
+      background-position: center;
+    }
+  }
+
+  &-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.demo-item {
+  margin: 0.5rem;
+  display: flex;
+  gap: 0.25rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  &__description {
+    background-color: $black;
+    border-radius: 4px;
+    opacity: 0.7;
+    width: 11rem;
+    height: 7.8rem;
+    padding: 0.75rem 0.5rem 0.5rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+
+    &-text {
+      font-size: 1rem;
+      line-height: 1.2;
+    }
+
+    &-colors {
+      display: flex;
+      gap: 0.25rem;
+      align-items: center;
+    }
+
+    &-other-colors {
+      font-size: 0.75rem;
+      padding-left: 0.25rem;
+      line-height: 1.5;
+    }
+  }
+}
