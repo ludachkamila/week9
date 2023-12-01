@@ -1,0 +1,46 @@
+.slider__corousel {
+    position: relative;
+    margin-top: -1.8rem;
+
+    &-button {
+        position: absolute;
+        z-index: 2;
+        top: 49.2%;
+        max-width: 5%;
+            
+            &_left {
+              left: -2.5%;
+            }
+      
+            &_right {
+              right: -2.5%;
+            } 
+    }   
+
+    &-item {
+        position: relative;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        h2 {
+            color: $white;
+            margin-top: -8.1rem;
+            margin-left: 2.6rem;
+            font-size: 3rem;
+            font-weight: 400;
+            line-height: 3.515rem;
+        }
+
+        p {
+            color: $white;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.171rem;
+            margin-top: 0.67rem;
+            margin-left: 2.5rem;
+        }
+    }
+}
