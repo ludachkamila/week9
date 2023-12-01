@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "RC";
   src: url("../assets/fonts/RobotoCondensed-Regular.ttf");
@@ -22,8 +23,8 @@ body {
 }
 
 .wrapper {
-  padding-left: 8.75rem;
-  padding-right: 8.75rem;
+  padding-left: 9.7%;
+  padding-right: 9.7%;
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
@@ -107,7 +108,97 @@ body {
   gap: 1.5rem;
 }
 
-<<<<<<< Updated upstream
+.main__catalogue {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 11.3rem;
+  gap: 2.5rem;
+}
+.main__catalogue-item_banner {
+  grid-area: 4/2/5/4;
+}
+.main__catalogue-item {
+  position: relative;
+}
+.main__catalogue-item span {
+  position: absolute;
+  padding: 1rem 1.5rem;
+  right: 0;
+  bottom: 0;
+  font-size: 1.5rem;
+  color: #3B3B3B;
+  transition: all 0.5s ease-in;
+}
+.main__catalogue-item span:hover {
+  color: #1A453E;
+}
+
+.main__catalogue-item-1 {
+  background-image: url("../assets/images/2-сatalogue/rectangle-1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main__catalogue-item-2 {
+  background-image: url("../assets/images/2-сatalogue/rectangle-2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main__catalogue-item-3 {
+  background-image: url("../assets/images/2-сatalogue/rectangle-3.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main__catalogue-item-4 {
+  background-image: url("../assets/images/2-сatalogue/rectangle-4.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main__catalogue-item-5 {
+  background-image: url("../assets/images/2-сatalogue/rectangle-5.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main__catalogue-item-6 {
+  background-image: url("../assets/images/2-сatalogue/rectangle-6.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main__catalogue-item-7 {
+  background-image: url("../assets/images/2-сatalogue/rectangle-7.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main__catalogue-item-8 {
+  background-image: url("../assets/images/2-сatalogue/rectangle-8.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main__catalogue-item-9 {
+  background-image: url("../assets/images/2-сatalogue/rectangle-9.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main__catalogue-item-10 {
+  background-image: url("../assets/images/2-сatalogue/rectangle-10.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main__catalogue-item-11 {
+  background-image: url("../assets/images/2-сatalogue/rectangle-11.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .interiors__heading {
   display: flex;
   justify-content: space-between;
@@ -148,7 +239,7 @@ body {
 }
 .interiors__grid-item-1 {
   grid-area: item-1;
-  background: url(../../assets/images/5-interiors/background-promo.svg);
+  background: url(../assets/images/5-interiors/background-promo.svg);
   padding-left: 1.5rem;
   padding-bottom: 1.5rem;
   line-height: 1.2;
@@ -157,22 +248,22 @@ body {
 }
 .interiors__grid-item-2 {
   grid-area: item-2;
-  background: url(../../assets/images/5-interiors/rectangle-143.svg);
+  background: url(../assets/images/5-interiors/rectangle-143.svg);
   background-position: center;
 }
 .interiors__grid-item-3 {
   grid-area: item-3;
-  background: url(../../assets/images/5-interiors/rectangle-147.svg);
+  background: url(../assets/images/5-interiors/rectangle-147.svg);
   background-position: center;
 }
 .interiors__grid-item-4 {
   grid-area: item-4;
-  background: url(../../assets/images/5-interiors/rectangle-144.svg);
+  background: url(../assets/images/5-interiors/rectangle-144.svg);
   background-position: center;
 }
 .interiors__grid-item-5 {
   grid-area: item-5;
-  background: url(../../assets/images/5-interiors/rectangle-145.svg);
+  background: url(../assets/images/5-interiors/rectangle-145.svg);
   background-position: center;
 }
 .interiors__grid-img {
@@ -193,98 +284,28 @@ body {
   background-color: #242424;
   border-radius: 4px;
   opacity: 0.7;
-=======
-.main__innovations .main__innovations_head {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 56rem;
-}
-.main__innovations .main__innovations_head h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
-}
-.main__innovations .innovations_all {
-  margin-top: 0.25rem;
-  margin-left: -0.18rem;
-}
-.main__innovations .innovations_all a {
-  color: #3B3B3B;
-  font-size: 1rem;
-  border-bottom: #8C4A37 solid 0.09rem;
-  padding: 0.1rem;
-}
-.main__innovations .innovations_all a img {
-  padding-left: 0.3rem;
-  padding-bottom: 0.1rem;
-}
-.main__innovations .innovations {
-  height: 24.0625rem;
-  width: 16.25rem;
-}
-.main__innovations .main__innovations_img {
-  display: flex;
-  gap: 2.5rem;
-  position: relative;
-}
-.main__innovations .innovations__border {
-  color: #E3E3E3;
-  border: 0.0625rem solid #E3E3E3;
-  border-radius: 0.5rem;
-  text-align: center;
-}
-.main__innovations .innovations_item {
->>>>>>> Stashed changes
-  width: 11rem;
-  height: 7.8rem;
+  max-width: 11rem;
+  min-height: 7.8rem;
   padding: 0.75rem 0.5rem 0.5rem 0.5rem;
   display: flex;
   flex-direction: column;
   gap: 0.65rem;
 }
-<<<<<<< Updated upstream
 .demo-item__description-text {
   font-size: 1rem;
   line-height: 1.2;
 }
 .demo-item__description-colors {
-=======
-.main__innovations .innovations_item-text {
-  font-size: 1rem;
-  line-height: 1.2;
-}
-.main__innovations .innovations_item-colors {
->>>>>>> Stashed changes
   display: flex;
   gap: 0.25rem;
   align-items: center;
 }
-<<<<<<< Updated upstream
 .demo-item__description-other-colors {
-=======
-.main__innovations .innovations_item-other-colors {
->>>>>>> Stashed changes
   font-size: 0.75rem;
   padding-left: 0.25rem;
   line-height: 1.5;
 }
 
-<<<<<<< Updated upstream
-=======
-.production {
-  display: flexbox;
-}
-.production h2 {
-  font-size: 2.5rem;
-  margin-bottom: 2.4375rem;
-}
-.production p {
-  font-size: 1.25rem;
-  width: 41.25rem;
-  padding-bottom: 2rem;
-}
-
->>>>>>> Stashed changes
 .projects__text {
   margin-bottom: 1.6rem;
   font-size: 2.5rem;
@@ -325,27 +346,30 @@ body {
 .main__blog {
   margin-top: -0.6rem;
 }
-.main__blog h2 {
+.main__blog-head {
   font-size: 2.5rem;
   margin-bottom: 1.4rem;
 }
-.main__blog_img {
+.main__blog-images {
+  position: relative;
+}
+.main__blog-items {
   display: flex;
   gap: 0.5rem;
   justify-content: start;
-  position: relative;
-}
-.main__blog-item {
-  position: relative;
 }
 .main__blog-item img {
-  height: 13.3125rem;
-  width: 17.75rem;
+  width: 100%;
+  height: auto;
+}
+.main__blog-item p {
+  font-size: 1rem;
+  padding-top: 0.6rem;
 }
 .main__blog-button {
   position: absolute;
   z-index: 2;
-  top: 5rem;
+  top: calc(50% - 3rem);
 }
 .main__blog-button_left {
   left: -2rem;
