@@ -300,6 +300,8 @@ body {
   position: relative;
 }
 .projects__carousel-item img {
+  width: 100%;
+  height: auto;
   border-radius: 0.5rem;
 }
 .projects__carousel-item p {
@@ -314,6 +316,7 @@ body {
   position: absolute;
   z-index: 2;
   top: 42.5%;
+  max-width: 5%;
 }
 .projects__carousel-button_left {
   left: -2.5%;
@@ -325,33 +328,37 @@ body {
 .main__blog {
   margin-top: -0.6rem;
 }
-.main__blog h2 {
+.main__blog-head {
   font-size: 2.5rem;
   margin-bottom: 1.4rem;
 }
-.main__blog_img {
+.main__blog-images {
+  position: relative;
+}
+.main__blog-items {
   display: flex;
   gap: 0.5rem;
   justify-content: start;
-  position: relative;
-}
-.main__blog-item {
-  position: relative;
 }
 .main__blog-item img {
-  height: 13.3125rem;
-  width: 17.75rem;
+  width: 100%;
+  height: auto;
+}
+.main__blog-item p {
+  font-size: 1rem;
+  padding-top: 0.6rem;
 }
 .main__blog-button {
   position: absolute;
   z-index: 2;
-  top: 5rem;
+  top: calc(50% - 3rem);
+  max-width: 5%;
 }
 .main__blog-button_left {
-  left: -2rem;
+  left: -2.5%;
 }
 .main__blog-button_right {
-  right: -2rem;
+  right: -2.5%;
 }
 
 .blog-item p {
@@ -370,6 +377,7 @@ body {
 }
 .about__1 p {
   width: 42.5rem;
+  max-width: 100%;
   padding-bottom: 1.5rem;
   font-size: 1.25rem;
 }
@@ -394,8 +402,8 @@ body {
   padding-top: 2rem;
 }
 .about__3 img {
-  width: 72.5rem;
-  height: 20.0625rem;
+  width: 100%;
+  height: auto;
 }
 
 /*general styles*/

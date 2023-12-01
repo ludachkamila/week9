@@ -10,6 +10,7 @@
 
     p {
         width: 42.5rem;
+        max-width: 100%;
         padding-bottom: 1.5rem;
         font-size: 1.25rem;
     }
@@ -39,7 +40,7 @@
     padding-top: 2rem;
 
     img {
-        width: 72.5rem;
-        height: 20.0625rem;
+        width: 100%;
+        height: auto;
     }
 }
