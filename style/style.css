@@ -107,6 +107,7 @@ body {
   gap: 1.5rem;
 }
 
+<<<<<<< Updated upstream
 .interiors__heading {
   display: flex;
   justify-content: space-between;
@@ -192,6 +193,48 @@ body {
   background-color: #242424;
   border-radius: 4px;
   opacity: 0.7;
+=======
+.main__innovations .main__innovations_head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 56rem;
+}
+.main__innovations .main__innovations_head h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+.main__innovations .innovations_all {
+  margin-top: 0.25rem;
+  margin-left: -0.18rem;
+}
+.main__innovations .innovations_all a {
+  color: #3B3B3B;
+  font-size: 1rem;
+  border-bottom: #8C4A37 solid 0.09rem;
+  padding: 0.1rem;
+}
+.main__innovations .innovations_all a img {
+  padding-left: 0.3rem;
+  padding-bottom: 0.1rem;
+}
+.main__innovations .innovations {
+  height: 24.0625rem;
+  width: 16.25rem;
+}
+.main__innovations .main__innovations_img {
+  display: flex;
+  gap: 2.5rem;
+  position: relative;
+}
+.main__innovations .innovations__border {
+  color: #E3E3E3;
+  border: 0.0625rem solid #E3E3E3;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+.main__innovations .innovations_item {
+>>>>>>> Stashed changes
   width: 11rem;
   height: 7.8rem;
   padding: 0.75rem 0.5rem 0.5rem 0.5rem;
@@ -199,21 +242,49 @@ body {
   flex-direction: column;
   gap: 0.65rem;
 }
+<<<<<<< Updated upstream
 .demo-item__description-text {
   font-size: 1rem;
   line-height: 1.2;
 }
 .demo-item__description-colors {
+=======
+.main__innovations .innovations_item-text {
+  font-size: 1rem;
+  line-height: 1.2;
+}
+.main__innovations .innovations_item-colors {
+>>>>>>> Stashed changes
   display: flex;
   gap: 0.25rem;
   align-items: center;
 }
+<<<<<<< Updated upstream
 .demo-item__description-other-colors {
+=======
+.main__innovations .innovations_item-other-colors {
+>>>>>>> Stashed changes
   font-size: 0.75rem;
   padding-left: 0.25rem;
   line-height: 1.5;
 }
 
+<<<<<<< Updated upstream
+=======
+.production {
+  display: flexbox;
+}
+.production h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2.4375rem;
+}
+.production p {
+  font-size: 1.25rem;
+  width: 41.25rem;
+  padding-bottom: 2rem;
+}
+
+>>>>>>> Stashed changes
 .projects__text {
   margin-bottom: 1.6rem;
   font-size: 2.5rem;
