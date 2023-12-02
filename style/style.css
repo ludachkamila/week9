@@ -107,45 +107,6 @@ body {
   gap: 1.5rem;
 }
 
-.slider__corousel {
-  position: relative;
-  margin-top: -1.8rem;
-}
-.slider__corousel-button {
-  position: absolute;
-  z-index: 2;
-  top: 49.2%;
-  max-width: 5%;
-}
-.slider__corousel-button_left {
-  left: -2.5%;
-}
-.slider__corousel-button_right {
-  right: -2.5%;
-}
-.slider__corousel-item {
-  position: relative;
-}
-.slider__corousel-item img {
-  width: 100%;
-  height: auto;
-}
-.slider__corousel-item h2 {
-  color: #FFFFFF;
-  margin-top: -8.1rem;
-  margin-left: 2.6rem;
-  font-size: 3rem;
-  font-weight: 400;
-  line-height: 3.515rem;
-}
-.slider__corousel-item p {
-  color: #FFFFFF;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.171rem;
-  margin-top: 0.67rem;
-  margin-left: 2.5rem;
-}
 
 .slider__corousel {
   position: relative;
@@ -187,7 +148,169 @@ body {
   margin-left: 2.5rem;
 }
 
-<<<<<<< Updated upstream
+.slider__corousel {
+  position: relative;
+  margin-top: -1.8rem;
+}
+.slider__corousel-button {
+  position: absolute;
+  z-index: 2;
+  top: 49.2%;
+  max-width: 5%;
+}
+.slider__corousel-button_left {
+  left: -2.5%;
+}
+.slider__corousel-button_right {
+  right: -2.5%;
+}
+.slider__corousel-item {
+  position: relative;
+}
+.slider__corousel-item img {
+  width: 100%;
+  height: auto;
+}
+.slider__corousel-item h2 {
+  color: #FFFFFF;
+  margin-top: -8.1rem;
+  margin-left: 2.6rem;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 3.515rem;
+}
+.slider__corousel-item p {
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.171rem;
+  margin-top: 0.67rem;
+  margin-left: 2.5rem;
+}
+
+
+
+.main__innovations-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.main__innovations-title {
+  font-size: 2.5rem;
+}
+
+.main__innovations-all {
+  margin-top: -0.15rem;
+  margin-right: 0.2rem;
+}
+.main__innovations-all a {
+  color: #3B3B3B;
+  font-size: 1rem;
+  border-bottom: #8C4A37 solid 0.09rem;
+  padding: 0.1rem;
+}
+.main__innovations-all a img {
+  padding-left: 0.3rem;
+  padding-bottom: 0.1rem;
+}
+
+.main__innovations-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__innovations-item-img {
+  padding: 1.25rem 2rem 0.8rem;
+  border: 1px solid #E3E3E3;
+  border-radius: 0.5rem;
+}
+
+.innovations_item {
+  max-width: 11rem;
+  min-height: 7.8rem;
+  padding: 1rem 0.5rem 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+.innovations_item_text {
+  font-size: 1rem;
+  line-height: 1.2;
+}
+.innovations_item_colors {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+}
+.innovations_item_all-colors {
+  font-size: 0.75rem;
+  padding-left: 0.25rem;
+  line-height: 1.5;
+}
+
+.main__production-title {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.main__production-contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2.5rem;
+  padding-bottom: 1.8rem;
+}
+.main__production-contents p {
+  line-height: 1.4;
+}
+
+.main__production-video {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-right: 6rem;
+}
+.main__production-video .video-title {
+  position: absolute;
+  right: 5rem;
+  white-space: nowrap;
+}
+.main__production-video .ellips {
+  position: absolute;
+  right: 0;
+}
+.main__production-video .play {
+  position: absolute;
+  right: 1.7rem;
+}
+
+.main__production-gallery {
+  position: relative;
+}
+.main__production-gallery-btn {
+  position: absolute;
+  top: 37%;
+}
+.main__production-gallery .btn-left {
+  left: -2rem;
+}
+.main__production-gallery .btn-right {
+  right: -2rem;
+}
+
+.main__production-img-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.main__production-img-container img {
+  width: 100%;
+  height: auto;
+}
+
+
 .interiors__heading {
   display: flex;
   justify-content: space-between;
@@ -273,48 +396,6 @@ body {
   background-color: #242424;
   border-radius: 4px;
   opacity: 0.7;
-=======
-.main__innovations .main__innovations_head {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 56rem;
-}
-.main__innovations .main__innovations_head h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
-}
-.main__innovations .innovations_all {
-  margin-top: 0.25rem;
-  margin-left: -0.18rem;
-}
-.main__innovations .innovations_all a {
-  color: #3B3B3B;
-  font-size: 1rem;
-  border-bottom: #8C4A37 solid 0.09rem;
-  padding: 0.1rem;
-}
-.main__innovations .innovations_all a img {
-  padding-left: 0.3rem;
-  padding-bottom: 0.1rem;
-}
-.main__innovations .innovations {
-  height: 24.0625rem;
-  width: 16.25rem;
-}
-.main__innovations .main__innovations_img {
-  display: flex;
-  gap: 2.5rem;
-  position: relative;
-}
-.main__innovations .innovations__border {
-  color: #E3E3E3;
-  border: 0.0625rem solid #E3E3E3;
-  border-radius: 0.5rem;
-  text-align: center;
-}
-.main__innovations .innovations_item {
->>>>>>> Stashed changes
   width: 11rem;
   height: 7.8rem;
   padding: 0.75rem 0.5rem 0.5rem 0.5rem;
@@ -322,49 +403,21 @@ body {
   flex-direction: column;
   gap: 0.65rem;
 }
-<<<<<<< Updated upstream
 .demo-item__description-text {
   font-size: 1rem;
   line-height: 1.2;
 }
 .demo-item__description-colors {
-=======
-.main__innovations .innovations_item-text {
-  font-size: 1rem;
-  line-height: 1.2;
-}
-.main__innovations .innovations_item-colors {
->>>>>>> Stashed changes
   display: flex;
   gap: 0.25rem;
   align-items: center;
 }
-<<<<<<< Updated upstream
 .demo-item__description-other-colors {
-=======
-.main__innovations .innovations_item-other-colors {
->>>>>>> Stashed changes
   font-size: 0.75rem;
   padding-left: 0.25rem;
   line-height: 1.5;
 }
 
-<<<<<<< Updated upstream
-=======
-.production {
-  display: flexbox;
-}
-.production h2 {
-  font-size: 2.5rem;
-  margin-bottom: 2.4375rem;
-}
-.production p {
-  font-size: 1.25rem;
-  width: 41.25rem;
-  padding-bottom: 2rem;
-}
-
->>>>>>> Stashed changes
 .projects__text {
   margin-bottom: 1.6rem;
   font-size: 2.5rem;
@@ -491,4 +544,4 @@ body {
   min-width: 320px;
   max-width: 1440px;
   margin: 0 auto;
-}
+}/*# sourceMappingURL=style.css.map */
