@@ -38,13 +38,14 @@
 
     &-btn{
         position: absolute;
-        top: 37%;
+        top: calc(50% - 1.7rem);
+        max-width: 5%;
     }
     & .btn-left{
-        left: -2rem;
+        left: -2.5%;
     }
     & .btn-right{
-        right: -2rem;
+        right: -2.5%;
     }
 }
 .main__production-img-container{

@@ -1,39 +1,54 @@
-.main__innovations-header{
+.main__innovations-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1.5rem;
 }
-.main__innovations-title{
+
+.main__innovations-title {
     font-size: 2.5rem;
 }
 
-.main__innovations-all{
+.main__innovations-all {
     margin-top: -0.15rem;
     margin-right: 0.2rem;
 
-    a{
+    a {
         color: $grey;
         font-size: 1rem;
         border-bottom: $red solid 0.09rem;
         padding: 0.1rem ;
     }
-    a{
-        img{
+    a {
+        img {
             padding-left: 0.3rem;
             padding-bottom: 0.1rem;
         }
     }
 }
-.main__innovations-container{
+.main__innovations-container {
     display: flex;
     justify-content: space-between;
 }
-.main__innovations-item-img{
+
+.main__innovations-item-img {
     padding: 1.25rem 2rem 0.8rem;
     border: 1px solid $gray-frame;
     border-radius: 0.5rem;
+    position: relative;
+
+    &-pic {
+      width: 100%;
+    }
+
+    &-new {
+      position: absolute;
+      top: 1rem;
+      right: 0rem;
+      max-width: 21.5%;
+    }
 }
+
 .innovations_item {
     max-width: 11rem;
     min-height: 7.8rem;
@@ -42,16 +57,18 @@
     flex-direction: column;
     gap: 0.65rem;
 
-    &_text{
+    &-text {
         font-size: 1rem;
         line-height: 1.2;
     }
-    &_colors{
+
+    &-colors {
         display: flex;
         gap: 0.25rem;
         align-items: center;
     }
-    &_all-colors{
+
+    &-all-colors {
         font-size: 0.75rem;
         padding-left: 0.25rem;
         line-height: 1.5;
