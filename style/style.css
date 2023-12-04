@@ -164,6 +164,9 @@ body {
   grid-auto-rows: 11.3rem;
   gap: 2.5rem;
 }
+.catalogue__heading {
+  display: none;
+}
 .catalogue-item_banner {
   grid-area: 4/2/5/4;
 }
