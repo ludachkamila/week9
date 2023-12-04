@@ -28,6 +28,14 @@ body {
   padding-top: 2.9rem;
   padding-bottom: 3rem;
 }
+@media screen and (max-width: 768px) {
+  .wrapper {
+    padding-left: 4.3%;
+    padding-right: 4.3%;
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+  }
+}
 
 .top {
   background-color: #F1EEEB;
