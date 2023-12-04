@@ -1,8 +1,4 @@
-.main__about {
-  padding-bottom: 6rem;
-}
-
-.about__1 {
+.about__heading-text {
     h2 {
         margin-bottom: 1.5rem;
         font-size: 2.5rem;
@@ -15,7 +11,7 @@
         font-size: 1.25rem;
     }
 }
-.about__2 {
+.about__link-item {
         margin-top: 0.256rem;
         margin-left: -0.18rem;
 
@@ -35,7 +31,7 @@
     }
 }
 
-.about__3 {
+.about__img-item {
     display: flex;
     padding-top: 2rem;
 
