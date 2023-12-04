@@ -25,7 +25,7 @@ body {
 .wrapper {
   padding-left: 9.7%;
   padding-right: 9.7%;
-  padding-top: 3rem;
+  padding-top: 2.9rem;
   padding-bottom: 3rem;
 }
 
@@ -76,7 +76,7 @@ body {
 
 .header__menu {
   padding-top: 1.4rem;
-  padding-bottom: 1.4rem;
+  padding-bottom: 1.5rem;
   display: flex;
   justify-content: space-between;
   position: sticky;
@@ -98,8 +98,7 @@ body {
   list-style: none;
   align-items: center;
   justify-content: flex-end;
-  -moz-column-gap: 3.5rem;
-       column-gap: 3.5rem;
+  column-gap: 3.5rem;
   padding: 0;
 }
 .header__nav-link {
@@ -574,6 +573,9 @@ body {
   line-height: 1.2rem;
 }
 
+.about {
+  padding-bottom: 6.1rem;
+}
 .about__heading-text h2 {
   margin-bottom: 1.5rem;
   font-size: 2.5rem;
@@ -584,7 +586,6 @@ body {
   padding-bottom: 1.5rem;
   font-size: 1.25rem;
 }
-
 .about__link-item {
   margin-top: 0.256rem;
   margin-left: -0.18rem;
@@ -599,7 +600,6 @@ body {
   padding-left: 0.3rem;
   padding-bottom: 0.1rem;
 }
-
 .about__img-item {
   display: flex;
   padding-top: 2rem;
@@ -620,7 +620,7 @@ body {
 .footer__part-1 {
   display: grid;
   grid-template-columns: 0.72fr 0.98fr 0.5fr;
-  padding-bottom: 2.5rem;
+  padding-bottom: 2.3rem;
 }
 .footer__catalogue {
   display: grid;
@@ -713,4 +713,4 @@ body {
   min-width: 320px;
   max-width: 1440px;
   margin: 0 auto;
-}/*# sourceMappingURL=style.css.map */
+}
