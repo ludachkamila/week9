@@ -2,12 +2,12 @@
     &-link {
 
         &_left {
-            font-size: 0.875rem;
+            font-size: 0.590rem;
             color: $grey;
             text-transform: uppercase;
         }
         &_right {
-            font-size: 0.875rem;
+            font-size: 0.590rem;
             color: $light-gray;
             text-transform: uppercase;
         }
@@ -24,15 +24,17 @@
 
         p {
             font-size: 1rem;
-            padding-bottom: 1.5rem;
+            padding-bottom: 1.250rem;
+            line-height: 1.450rem;
         }
     }
 
     &-contacts {
+        padding-top: 3.2rem;
         padding-bottom: 4rem;
 
         h3 {
-            font-size: 1.7rem;
+            font-size: 1.550rem;
             padding-bottom: 2rem;
             font-weight: 400;
 

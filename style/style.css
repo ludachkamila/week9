@@ -106,7 +106,8 @@ body {
   list-style: none;
   align-items: center;
   justify-content: flex-end;
-  column-gap: 3.5rem;
+  -moz-column-gap: 3.5rem;
+       column-gap: 3.5rem;
   padding: 0;
 }
 .header__nav-link {
@@ -734,12 +735,12 @@ body {
 }
 
 .about__second-page-link_left {
-  font-size: 0.875rem;
+  font-size: 0.59rem;
   color: #3B3B3B;
   text-transform: uppercase;
 }
 .about__second-page-link_right {
-  font-size: 0.875rem;
+  font-size: 0.59rem;
   color: #AAAAAA;
   text-transform: uppercase;
 }
@@ -752,13 +753,15 @@ body {
 }
 .about__second-page-text p {
   font-size: 1rem;
-  padding-bottom: 1.5rem;
+  padding-bottom: 1.25rem;
+  line-height: 1.45rem;
 }
 .about__second-page-contacts {
+  padding-top: 3.2rem;
   padding-bottom: 4rem;
 }
 .about__second-page-contacts h3 {
-  font-size: 1.7rem;
+  font-size: 1.55rem;
   padding-bottom: 2rem;
   font-weight: 400;
 }
@@ -787,4 +790,4 @@ body {
   min-width: 320px;
   max-width: 1440px;
   margin: 0 auto;
-}
+}/*# sourceMappingURL=style.css.map */
