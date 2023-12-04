@@ -1,37 +1,40 @@
-.main__innovations-header {
+.innovations {
+  &__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1.5rem;
-}
+  }
 
-.main__innovations-title {
+  &__title {
     font-size: 2.5rem;
-}
+  }
 
-.main__innovations-all {
+  &__all {
     margin-top: -0.15rem;
     margin-right: 0.2rem;
 
     a {
-        color: $grey;
-        font-size: 1rem;
-        border-bottom: $red solid 0.09rem;
-        padding: 0.1rem ;
+      color: $grey;
+      font-size: 1rem;
+      border-bottom: $red solid 0.09rem;
+      padding: 0.1rem ;
     }
+
     a {
-        img {
-            padding-left: 0.3rem;
-            padding-bottom: 0.1rem;
-        }
+      img {
+          padding-left: 0.3rem;
+          padding-bottom: 0.1rem;
+      }
     }
-}
-.main__innovations-container {
+  }
+
+  &__container {
     display: flex;
     justify-content: space-between;
-}
+  }
 
-.main__innovations-item-img {
+  &__item-img {
     padding: 1.25rem 2rem 0.8rem;
     border: 1px solid $gray-frame;
     border-radius: 0.5rem;
@@ -47,9 +50,9 @@
       right: 0rem;
       max-width: 21.5%;
     }
-}
+  }
 
-.innovations_item {
+  &__item-description {
     max-width: 11rem;
     min-height: 7.8rem;
     padding: 1rem 0.5rem 0.5rem 0;
@@ -73,4 +76,5 @@
         padding-left: 0.25rem;
         line-height: 1.5;
     }
+}
 }

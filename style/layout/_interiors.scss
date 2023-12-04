@@ -1,86 +1,86 @@
-.main__interiors {
+.interiors {
   padding-top: 2.2rem;
-}
 
-.interiors__heading {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 1.3rem;
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1.3rem;
 
-  &-title {
-    font-size: 2.5rem;
-    line-height: 1.4;
+    &-title {
+      font-size: 2.5rem;
+      line-height: 1.4;
+    }
+
+    &-link {
+      border-bottom: 1px solid $red;
+      margin-top: -0.3rem;
+      margin-right: 0.5rem;
+      transition: $transition;
+
+      &-text {
+        color: $grey;
+        font-size: 1rem;
+        &:hover {
+          color: $main-green;
+        }
+      }
+
+      &:hover {
+        border-bottom: 1px solid $main-green;
+      }
+    }
   }
 
-  &-link {
-    border-bottom: 1px solid $red;
-    margin-top: -0.3rem;
-    margin-right: 0.5rem;
-    transition: $transition;
+  &__grid {
+    display: grid;
+    grid-template-columns: 4.1fr 3.5fr 2.6fr;
+    grid-template-rows: 14.6rem 14.6rem 25.6rem;
+    grid-gap: 0.5rem;
+    grid-template-areas:
+              'item-1 item-2 item-3'
+              'item-4 item-2 item-3'
+              'item-4 item-5 item-5';
 
-    &-text {
-      color: $grey;
-      font-size: 1rem;
-      &:hover {
-        color: $main-green;
+    &-item {
+      color: $white;
+      position: relative;
+      &-1 {
+        grid-area: item-1;
+        padding-left: 1.5rem;
+        padding-bottom: 1.5rem;
+        line-height: 1.2;
+        display: flex;
+        align-items: flex-end;
+      }
+      &-2 {
+        grid-area: item-2;
+      }
+      &-3 {
+        grid-area: item-3;
+      }
+      &-4 {
+        grid-area: item-4;
+      }
+      &-5 {
+        grid-area: item-5;
       }
     }
 
-    &:hover {
-      border-bottom: 1px solid $main-green;
+    @for $i from 1 through 5 {
+      .interiors__grid-item-#{$i} {
+        background: url('../assets/images/5-interiors/rect-#{$i}.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
     }
-  }
-}
 
-.interiors__grid {
-  display: grid;
-  grid-template-columns: 4.1fr 3.5fr 2.6fr;
-  grid-template-rows: 14.6rem 14.6rem 25.6rem;
-  grid-gap: 0.5rem;
-  grid-template-areas:
-            'item-1 item-2 item-3'
-            'item-4 item-2 item-3'
-            'item-4 item-5 item-5';
-
-  &-item {
-    color: $white;
-    position: relative;
-    &-1 {
-      grid-area: item-1;
-      background: url(../assets/images/5-interiors/background-promo.svg);
-      padding-left: 1.5rem;
-      padding-bottom: 1.5rem;
-      line-height: 1.2;
-      display: flex;
-      align-items: flex-end;
+    &-img {
+      position: absolute;
+      top: 0;
+      right: 0;
     }
-    &-2 {
-      grid-area: item-2;
-      background: url(../assets/images/5-interiors/rectangle-143.svg);
-      background-position: center;
-    }
-    &-3 {
-      grid-area: item-3;
-      background: url(../assets/images/5-interiors/rectangle-147.svg);
-      background-position: center;
-    }
-    &-4 {
-      grid-area: item-4;
-      background: url(../assets/images/5-interiors/rectangle-144.svg);
-      background-position: center;
-    }
-    &-5 {
-      grid-area: item-5;
-      background: url(../assets/images/5-interiors/rectangle-145.svg);
-      background-position: center;
-    }
-  }
-
-  &-img {
-    position: absolute;
-    top: 0;
-    right: 0;
   }
 }
 
