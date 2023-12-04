@@ -1,60 +1,60 @@
-.about__second_page {
-    
+.about__second-page {
     &-link {
+
         &_left {
             font-size: 0.875rem;
-            font-weight: 400;
             color: $grey;
+            text-transform: uppercase;
         }
         &_right {
             font-size: 0.875rem;
-            color: $stroke-gray;
-            font-weight: 400;
+            color: $light-gray;
+            text-transform: uppercase;
         }
     }
 
     &-text {
-        margin-top: 4rem;
-        
         h2 {
-            margin-bottom: 4rem;
+          padding-top: 2.5rem;
+            padding-bottom: 2.5rem;
             font-size: 1.875rem;
-            font-weight: 400;
             line-height: 3.75rem;
+            text-transform: uppercase;
         }
 
         p {
             font-size: 1rem;
-            font-weight: 400;
             padding-bottom: 1.5rem;
         }
     }
 
     &-contacts {
-        margin-bottom: 4rem;
-        
+        padding-bottom: 4rem;
+
         h3 {
             font-size: 1.7rem;
-            font-weight: 400;
             padding-bottom: 2rem;
+            font-weight: 400;
+
         }
 
         p {
             font-size: 1rem;
-            font-weight: 400;
+            padding-bottom: 0.25rem;
         }
     }
 
     &-img {
         display: flex;
         gap: 0.2rem;
+        justify-content: center;
         width: 100%;
         height: auto;
-        
+
         &_left  {
             img {
                 width: 100%;
-                height: auto;   
+                height: auto;
             }
         }
 
