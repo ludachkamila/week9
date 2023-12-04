@@ -4,6 +4,10 @@
   grid-auto-rows: 11.3rem;
   gap: 2.5rem;
 
+  &__heading {
+    display: none;
+  }
+
   &-item_banner {
     grid-area: 4 / 2 / 5 / 4;
   }
