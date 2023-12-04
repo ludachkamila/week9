@@ -573,6 +573,10 @@ body {
   line-height: 1.2rem;
 }
 
+.main__about {
+  padding-bottom: 6rem;
+}
+
 .about__1 h2 {
   margin-bottom: 1.5rem;
   font-size: 2.5rem;
@@ -606,6 +610,105 @@ body {
 .about__3 img {
   width: 100%;
   height: auto;
+}
+
+.footer {
+  background-color: #FAFAFA;
+  font-size: 0.875rem;
+}
+.footer__title {
+  font-size: 1rem;
+  padding-bottom: 1.5rem;
+}
+.footer__part-1 {
+  display: grid;
+  grid-template-columns: 0.72fr 0.98fr 0.5fr;
+  padding-bottom: 2.5rem;
+}
+.footer__catalogue {
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
+  grid-template-rows: min-content 1fr;
+  grid-template-areas: "catalogue-title catalogue-title" "catalogue-nav-1 catalogue-nav-2";
+}
+.footer__catalogue-title {
+  grid-area: catalogue-title;
+}
+.footer__catalogue-nav-1 {
+  grid-area: catalogue-nav-1;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer__catalogue-nav-1 a {
+  color: #3B3B3B;
+}
+.footer__catalogue-nav-2 {
+  grid-area: catalogue-nav-2;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer__catalogue-nav-2 a {
+  color: #3B3B3B;
+}
+.footer__customers {
+  display: grid;
+  grid-template-columns: 0.8fr 1fr;
+  grid-template-rows: min-content 1fr;
+  grid-template-areas: "customers-title-1 customers-title-2" "customers-nav-1 customers-nav-2";
+}
+.footer__customers-title-1 {
+  grid-area: customers-title-1;
+}
+.footer__customers-title-2 {
+  grid-area: customers-title-2;
+}
+.footer__customers-nav-1 {
+  grid-area: customers-nav-1;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer__customers-nav-1 a {
+  color: #3B3B3B;
+}
+.footer__customers-nav-2 {
+  grid-area: customers-nav-2;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer__customers-nav-2 a {
+  color: #3B3B3B;
+}
+.footer__contacts-title {
+  padding-bottom: 1rem;
+}
+.footer__contacts-tel {
+  font-size: 1.5rem;
+  line-height: 100%;
+}
+.footer__contacts-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer__contacts-hours {
+  margin-top: -0.25rem;
+}
+.footer__part-2 {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(59, 59, 59, 0.2);
+  margin-left: 9.7%;
+  margin-right: 9.7%;
+  padding-bottom: 1.5rem;
 }
 
 /*general styles*/
