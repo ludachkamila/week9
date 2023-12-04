@@ -1,0 +1,68 @@
+.about__second_page {
+    
+    &-link {
+        &_left {
+            font-size: 0.875rem;
+            font-weight: 400;
+            color: $grey;
+        }
+        &_right {
+            font-size: 0.875rem;
+            color: $stroke-gray;
+            font-weight: 400;
+        }
+    }
+
+    &-text {
+        margin-top: 4rem;
+        
+        h2 {
+            margin-bottom: 4rem;
+            font-size: 1.875rem;
+            font-weight: 400;
+            line-height: 3.75rem;
+        }
+
+        p {
+            font-size: 1rem;
+            font-weight: 400;
+            padding-bottom: 1.5rem;
+        }
+    }
+
+    &-contacts {
+        margin-bottom: 4rem;
+        
+        h3 {
+            font-size: 1.7rem;
+            font-weight: 400;
+            padding-bottom: 2rem;
+        }
+
+        p {
+            font-size: 1rem;
+            font-weight: 400;
+        }
+    }
+
+    &-img {
+        display: flex;
+        gap: 0.2rem;
+        width: 100%;
+        height: auto;
+        
+        &_left  {
+            img {
+                width: 100%;
+                height: auto;   
+            }
+        }
+
+        &_right {
+            img {
+                width: 100%;
+                height: auto;
+            };
+        }
+    }
+}
