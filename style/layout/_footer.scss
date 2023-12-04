@@ -1,0 +1,111 @@
+.footer {
+  background-color: $footer-bg;
+  font-size: 0.875rem;
+
+  &__title {
+    font-size: 1rem;
+    padding-bottom: 1.5rem;
+  }
+
+  &__part-1{
+    display: grid;
+    grid-template-columns: 0.72fr 0.98fr 0.5fr;
+    padding-bottom: 2.3rem;
+  }
+
+  &__catalogue {
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+    grid-template-rows: min-content 1fr;
+    grid-template-areas:
+        'catalogue-title catalogue-title'
+        'catalogue-nav-1 catalogue-nav-2';
+
+    &-title {
+      grid-area: catalogue-title;
+    }
+
+    &-nav-1 {
+      grid-area: catalogue-nav-1;
+      list-style: none;
+      @include footer-flex;
+      a {
+        color: $grey;
+      }
+    }
+
+    &-nav-2 {
+      grid-area: catalogue-nav-2;
+      list-style: none;
+      @include footer-flex;
+      a {
+        color: $grey;
+      }
+    }
+  }
+
+  &__customers {
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    grid-template-rows: min-content 1fr;
+    grid-template-areas:
+        'customers-title-1 customers-title-2'
+        'customers-nav-1 customers-nav-2';
+
+    &-title-1 {
+      grid-area: customers-title-1;
+    }
+
+    &-title-2 {
+      grid-area: customers-title-2;
+    }
+
+    &-nav-1 {
+      grid-area: customers-nav-1;
+      list-style: none;
+      @include footer-flex;
+      a {
+        color: $grey;
+      }
+    }
+
+    &-nav-2 {
+      grid-area: customers-nav-2;
+      list-style: none;
+      @include footer-flex;
+      a {
+        color: $grey;
+      }
+    }
+  }
+
+  &__contacts {
+    &-title {
+      padding-bottom: 1rem;
+    }
+
+    &-tel {
+      font-size: 1.5rem;
+      line-height: 100%;
+    }
+
+    &-content {
+      @include footer-flex;
+    }
+
+    &-hours {
+      margin-top: -0.25rem;
+    }
+  }
+
+  &__part-2 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba($color: $grey, $alpha: 0.2);
+    margin-left: 9.7%;
+    margin-right: 9.7%;
+    padding-bottom: 1.5rem;
+
+  }
+}
