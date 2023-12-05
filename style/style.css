@@ -126,6 +126,11 @@ body {
   background-color: #FFFFFF;
   z-index: 6;
 }
+@media screen and (max-width: 376px) {
+  .header__menu {
+    padding-bottom: 2.3rem;
+  }
+}
 .header__menu-logo {
   padding-right: 1rem;
 }
