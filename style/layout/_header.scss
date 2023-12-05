@@ -29,6 +29,10 @@
 
     &-order-call {
       text-transform: uppercase;
+
+      @media screen and (max-width: $large-mobile) {
+        display: none;
+      }
     }
   }
 
@@ -47,6 +51,10 @@
     display: flex;
     align-items: center;
     gap: 0.25rem;
+
+    @media screen and (max-width: $large-mobile) {
+      display: none;
+    }
   }
 
   &__socmedia {
@@ -75,11 +83,19 @@
     background-color: $white;
     z-index: 6;
 
+    @media screen and (max-width: $mobile) {
+      padding-bottom: 2.3rem;
+    }
+
     &-logo {
       padding-right: 1rem;
 
       @media screen and (max-width: $large-tablet) {
         width: 8.5rem;
+      }
+
+      @media screen and (max-width: $mobile) {
+        width: 6.6rem;
       }
     }
   }
@@ -131,6 +147,10 @@
     @media screen and (max-width: $large-tablet) {
       display: flex;
       margin-left: 1.5rem;
+    }
+
+    @media screen and (max-width: $large-mobile) {
+      margin-left: 0;
     }
   }
 }

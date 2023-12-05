@@ -11,13 +11,26 @@
         @media screen and (max-width: $mobile) {
             top: 50%;
         }
+
+        @media (min-width: $mobile) and (max-width: $tablet) {
+            max-width: 7.5%;
+            top: 46.2%;
+        }
             
             &_left {
               left: -2.5%;
+
+              @media (min-width: $mobile) and (max-width: $tablet) {
+                left: -3.8%;
+              }
             }
       
             &_right {
               right: -2.5%;
+
+              @media (min-width: $mobile) and (max-width: $tablet) {
+                right: -3.8%;
+              }
             } 
     }   
 
@@ -27,6 +40,10 @@
         img {
             width: 100%;
             height: auto;
+            @media (min-width: $mobile) and (max-width: $tablet) {
+                width: 100%;
+                height: auto;
+            }
         }
 
         h2 {
@@ -44,9 +61,10 @@
             }
 
             @media (min-width: $mobile) and (max-width: $tablet) {
-                font-size: 1.5rem;
-                margin-left: 1rem;
-                margin-top: -5rem;
+                font-size: 2.26rem;
+                font-weight: 400;
+                margin-left: 1.4rem;
+                margin-top: -6.5rem;
             }
         }
 
@@ -65,9 +83,10 @@
             }
 
             @media (min-width: $mobile) and (max-width: $tablet) {
-                font-size: 0.6rem;
-                margin-left: 1rem;
-                margin-top: -1rem;
+                font-size: 0.9rem;
+                margin-left: 1.39rem;
+                margin-top: -0.04rem;
+                font-weight: 400;
             }
         }
     }

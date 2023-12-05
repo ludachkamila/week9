@@ -1,6 +1,10 @@
 .main__blog {
     margin-top: -0.6rem;
 
+    @media (min-width: $mobile) and (max-width: $tablet) {
+      margin-top: -1.2rem;
+    }
+
     &-head {
         font-size: 2.5rem;
         margin-bottom: 1.4rem;
@@ -10,7 +14,7 @@
         }
 
         @media (min-width: $mobile) and (max-width: $tablet) {
-          font-size: 1.5rem;
+          font-size: 2rem;
         }
     }
     &-images {
@@ -22,6 +26,9 @@
         justify-content: start;
     }
     &-item {
+      @media (min-width: $mobile) and (max-width: $tablet) {
+        margin-top: -0.6rem;
+      }
         img {
             width: 100%;
             height: auto;
@@ -36,7 +43,7 @@
             }
 
             @media (min-width: $mobile) and (max-width: $tablet) {
-              font-size: 0.3rem;
+              font-size: 0.875rem;
               padding-top: 0.1rem;
             }
             
@@ -56,14 +63,21 @@
           top: 30%;
         }
 
-        @media screen and (max-width: $tablet) {
-          top: 30%;
+        @media (min-width: $mobile) and (max-width: $tablet) {
+          top: 19%;
+          max-width: 7.5%;
         }
       &_left {
           left: -2.5%;
+          @media (min-width: $mobile) and (max-width: $tablet) {
+            left: -3.8%;
+          }
       }
       &_right {
           right: -2.5%;
+          @media (min-width: $mobile) and (max-width: $tablet) {
+            right: -3.8%;
+          }
       }
     }
   }
