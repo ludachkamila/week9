@@ -9,7 +9,8 @@
   }
 
   @media (min-width: $mobile) and (max-width: $tablet) {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
   }
 }
 .projects__carousel {
@@ -18,6 +19,13 @@
   position: relative;
     &-item {
       position: relative;
+
+      @media (min-width: $mobile) and (max-width: $tablet) {
+        position: relative;
+        &-4 {
+          display: none;
+        }
+      }
       
       img {
         width: 100%;
@@ -41,14 +49,15 @@
         }
 
         @media (min-width: $mobile) and (max-width: $tablet) {
-          font-size: 0.3rem;
+          font-size: 0.875rem;
           left: 0.5rem;
-          bottom: 0.9rem ;
+          top: 81%;
         }
 
         @media (min-width: $tablet) and (max-width: 1206px) {
           font-size: 0.5rem;
         }
+
       }
     }
     
@@ -57,13 +66,26 @@
       z-index: 2;
       top: 42.5%;
       max-width: 5%;
+
+      @media (min-width: $mobile) and (max-width: $tablet) {
+        max-width: 7.5%;
+        top: 40%;
+      }
       
       &_left {
         left: -2.5%;
+
+        @media (min-width: $mobile) and (max-width: $tablet) {
+          left: -4%;
+        }
       }
 
       &_right {
         right: -2.5%;
+
+        @media (min-width: $mobile) and (max-width: $tablet) {
+          right: -4%;
+        }
       }
     }
 }
