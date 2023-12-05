@@ -1,12 +1,7 @@
-.interiors {
+
 .interiors {
   padding-top: 2.2rem;
 
-  &__heading {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 1.3rem;
   &__heading {
     display: flex;
     justify-content: space-between;
@@ -41,34 +36,13 @@
           color: $main-green;
         }
       }
-      &-text {
-        color: $grey;
-        font-size: 1rem;
-        &:hover {
-          color: $main-green;
-        }
-      }
 
       &:hover {
         border-bottom: 1px solid $main-green;
       }
     }
   }
-      &:hover {
-        border-bottom: 1px solid $main-green;
-      }
-    }
-  }
 
-  &__grid {
-    display: grid;
-    grid-template-columns: 4.1fr 3.5fr 2.6fr;
-    grid-template-rows: 14.6rem 14.6rem 25.6rem;
-    grid-gap: 0.5rem;
-    grid-template-areas:
-              'item-1 item-2 item-3'
-              'item-4 item-2 item-3'
-              'item-4 item-5 item-5';
   &__grid {
     display: grid;
     grid-template-columns: 4.1fr 3.5fr 2.6fr;
@@ -96,7 +70,6 @@
                 'item-2 item-4'
                 'item-5 item-5';
     }
-
 
     &-item {
       cursor: pointer;
