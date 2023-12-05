@@ -5,6 +5,14 @@
       h2 {
           margin-bottom: 1.5rem;
           font-size: 2.5rem;
+
+          @media screen and (max-width: $mobile) {
+            font-size: 1.5rem;
+          }
+
+          @media (min-width: $mobile) and (max-width: $tablet) {
+            font-size: 1.5rem;
+          }
       }
 
       p {
@@ -12,12 +20,19 @@
           max-width: 100%;
           padding-bottom: 1.5rem;
           font-size: 1.25rem;
+
+          @media screen and (max-width: $mobile) {
+            font-size: 0.8rem;
+          }
+
+          @media (min-width: $mobile) and (max-width: $tablet) {
+            font-size: 0.7rem;
+          }
       }
   }
   &__link-item {
           margin-top: 0.256rem;
           margin-left: -0.18rem;
-
 
       a {
           color: $grey;
