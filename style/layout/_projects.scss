@@ -19,13 +19,6 @@
   position: relative;
     &-item {
       position: relative;
-
-      @media (min-width: $mobile) and (max-width: $tablet) {
-        position: relative;
-        &-4 {
-          display: none;
-        }
-      }
       
       img {
         width: 100%;

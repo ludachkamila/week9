@@ -28,9 +28,6 @@
     &-item {
       @media (min-width: $mobile) and (max-width: $tablet) {
         margin-top: -0.6rem;
-        &-4 {
-          display: none;
-        }
       }
         img {
             width: 100%;
