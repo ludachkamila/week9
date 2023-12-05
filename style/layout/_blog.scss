@@ -46,6 +46,16 @@
         }
       }
 
+      @media (min-width: $mobile) and (max-width: $large-mobile) {
+        &-3 {
+          display: none;
+        }
+
+        &-4 {
+          display: none;
+        }
+      }
+
       @media screen and (max-width: $large-mobile) {
         &-3 {
           display: none;
