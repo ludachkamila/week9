@@ -15,6 +15,10 @@
   &-item {
     position: relative;
 
+    &:hover{
+      transform: scale(1.1);
+    }
+
     span {
       position: absolute;
       padding: 1rem 1.5rem;
