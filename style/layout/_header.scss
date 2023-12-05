@@ -7,6 +7,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media screen and (max-width: $large-tablet) {
+      padding-top: 0.4rem;
+      padding-bottom: 0.3rem;
+    }
   }
 
   &__tel {
@@ -14,6 +19,9 @@
     gap: 2.5rem;
     font-size: 0.875rem;
     align-items: center;
+    @media screen and (max-width: $large-tablet) {
+      gap: 1.5rem;
+    }
 
     &-number {
       font-weight: 700;
@@ -29,6 +37,10 @@
     gap: 5rem;
     font-size: 0.875rem;
     align-items: center;
+
+    @media screen and (max-width: $large-tablet) {
+      gap: 2.2rem;
+    }
   }
 
   &__locations {
@@ -65,6 +77,10 @@
 
     &-logo {
       padding-right: 1rem;
+
+      @media screen and (max-width: $large-tablet) {
+        width: 8.5rem;
+      }
     }
   }
 
@@ -74,14 +90,22 @@
     align-items: center;
 
     &-container {
-      display: flex;
-      flex-wrap: wrap;
       list-style: none;
-      align-items: center;
-      justify-content: flex-end;
+      display: grid;
+      grid-template-columns: repeat(5, max-content);
+      grid-template-rows: 1fr;
       column-gap: 3.5rem;
-      padding: 0;
+
+      @media screen and (max-width: $small-desktop) {
+        grid-template-columns: repeat(3, max-content);
+        grid-template-rows: repeat(2, 1fr);
+      }
+      @media screen and (max-width: $large-tablet) {
+        display: none;
+      }
+
     }
+
     &-link {
       color: $grey;
       text-transform: uppercase;
@@ -100,5 +124,13 @@
     align-items: center;
     gap: 1.5rem;
     padding-left: 1rem;
+  }
+
+  &__burger {
+    display: none;
+    @media screen and (max-width: $large-tablet) {
+      display: flex;
+      margin-left: 1.5rem;
+    }
   }
 }
