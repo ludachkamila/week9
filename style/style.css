@@ -47,11 +47,22 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 980px) {
+  .top__contacts {
+    padding-top: 0.4rem;
+    padding-bottom: 0.3rem;
+  }
+}
 .top__tel {
   display: flex;
   gap: 2.5rem;
   font-size: 0.875rem;
   align-items: center;
+}
+@media screen and (max-width: 980px) {
+  .top__tel {
+    gap: 1.5rem;
+  }
 }
 .top__tel-number {
   font-weight: 700;
@@ -64,6 +75,11 @@ body {
   gap: 5rem;
   font-size: 0.875rem;
   align-items: center;
+}
+@media screen and (max-width: 980px) {
+  .top__other-contacts {
+    gap: 2.2rem;
+  }
 }
 .top__locations {
   display: flex;
@@ -95,20 +111,33 @@ body {
 .header__menu-logo {
   padding-right: 1rem;
 }
+@media screen and (max-width: 980px) {
+  .header__menu-logo {
+    width: 8.5rem;
+  }
+}
 .header__nav {
   padding-right: 5rem;
   display: flex;
   align-items: center;
 }
 .header__nav-container {
-  display: flex;
-  flex-wrap: wrap;
   list-style: none;
-  align-items: center;
-  justify-content: flex-end;
-  -moz-column-gap: 3.5rem;
-       column-gap: 3.5rem;
-  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(5, max-content);
+  grid-template-rows: 1fr;
+  column-gap: 3.5rem;
+}
+@media screen and (max-width: 1260px) {
+  .header__nav-container {
+    grid-template-columns: repeat(3, max-content);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 980px) {
+  .header__nav-container {
+    display: none;
+  }
 }
 .header__nav-link {
   color: #3B3B3B;
@@ -125,6 +154,15 @@ body {
   align-items: center;
   gap: 1.5rem;
   padding-left: 1rem;
+}
+.header__burger {
+  display: none;
+}
+@media screen and (max-width: 980px) {
+  .header__burger {
+    display: flex;
+    margin-left: 1.5rem;
+  }
 }
 
 .slider__corousel {
@@ -400,11 +438,23 @@ body {
   font-size: 2.5rem;
   line-height: 1.4;
 }
+@media screen and (max-width: 768px) {
+  .interiors__heading-title {
+    font-size: 2rem;
+    line-height: 100%;
+  }
+}
 .interiors__heading-link {
   border-bottom: 1px solid #8C4A37;
   margin-top: -0.3rem;
   margin-right: 0.5rem;
   transition: all 0.5s ease-in;
+}
+@media screen and (max-width: 768px) {
+  .interiors__heading-link {
+    font-size: 0.875rem;
+    margin-right: 0;
+  }
 }
 .interiors__heading-link-text {
   color: #3B3B3B;
@@ -423,23 +473,54 @@ body {
   grid-gap: 0.5rem;
   grid-template-areas: "item-1 item-2 item-3" "item-4 item-2 item-3" "item-4 item-5 item-5";
 }
+@media screen and (max-width: 1260px) {
+  .interiors__grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "item-1 item-2" "item-4 item-2" "item-4 item-5";
+  }
+}
+@media screen and (max-width: 768px) {
+  .interiors__grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 8.75rem 29.75rem 17.43rem;
+    grid-template-areas: "item-1 item-1" "item-2 item-4" "item-5 item-5";
+  }
+}
 .interiors__grid-item {
+  cursor: pointer;
   color: #FFFFFF;
   position: relative;
 }
 .interiors__grid-item-1 {
   grid-area: item-1;
-  padding-left: 1.5rem;
-  padding-bottom: 1.5rem;
-  line-height: 1.2;
   display: flex;
   align-items: flex-end;
+}
+.interiors__grid-item-1 p {
+  padding-left: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-right: 1.5rem;
+  line-height: 1.2;
+}
+@media screen and (max-width: 768px) {
+  .interiors__grid-item-1 p {
+    font-size: 1rem;
+    max-width: 44%;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 0;
+  }
 }
 .interiors__grid-item-2 {
   grid-area: item-2;
 }
 .interiors__grid-item-3 {
   grid-area: item-3;
+}
+@media screen and (max-width: 1260px) {
+  .interiors__grid-item-3 {
+    display: none;
+  }
 }
 .interiors__grid-item-4 {
   grid-area: item-4;
@@ -481,6 +562,11 @@ body {
   position: absolute;
   top: 0;
   right: 0;
+}
+@media screen and (max-width: 768px) {
+  .interiors__grid-img {
+    max-width: 19%;
+  }
 }
 
 .demo-item {
@@ -644,15 +730,31 @@ body {
   padding-bottom: 1.5rem;
 }
 .footer__part-1 {
+  padding-top: 2.5rem;
+  padding-bottom: 0;
   display: grid;
   grid-template-columns: 0.72fr 0.98fr 0.5fr;
-  padding-bottom: 2.3rem;
+  grid-template-areas: "catalogue customers contacts";
+}
+@media screen and (max-width: 1260px) {
+  .footer__part-1 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, fit-content());
+    grid-template-areas: "catalogue customers" "contacts contacts";
+  }
 }
 .footer__catalogue {
+  grid-area: catalogue;
+  padding-bottom: 2.3rem;
   display: grid;
   grid-template-columns: 0.7fr 1fr;
   grid-template-rows: min-content 1fr;
   grid-template-areas: "catalogue-title catalogue-title" "catalogue-nav-1 catalogue-nav-2";
+}
+@media screen and (max-width: 1260px) {
+  .footer__catalogue {
+    padding-bottom: 2rem;
+  }
 }
 .footer__catalogue-title {
   grid-area: catalogue-title;
@@ -678,10 +780,16 @@ body {
   color: #3B3B3B;
 }
 .footer__customers {
+  grid-area: customers;
   display: grid;
   grid-template-columns: 0.8fr 1fr;
   grid-template-rows: min-content 1fr;
   grid-template-areas: "customers-title-1 customers-title-2" "customers-nav-1 customers-nav-2";
+}
+@media screen and (max-width: 1260px) {
+  .footer__customers {
+    grid-template-columns: 1.8fr 1fr;
+  }
 }
 .footer__customers-title-1 {
   grid-area: customers-title-1;
@@ -709,6 +817,9 @@ body {
 .footer__customers-nav-2 a {
   color: #3B3B3B;
 }
+.footer__contacts {
+  grid-area: contacts;
+}
 .footer__contacts-title {
   padding-bottom: 1rem;
 }
@@ -721,8 +832,23 @@ body {
   flex-direction: column;
   gap: 1rem;
 }
+@media screen and (max-width: 1260px) {
+  .footer__contacts-content {
+    display: grid;
+    grid-template-columns: 1.8fr 0.7fr 2fr;
+    grid-template-rows: repeat(2, min-content);
+    grid-auto-flow: column;
+    column-gap: 3.5rem;
+    row-gap: 0;
+    padding-bottom: 2.5rem;
+  }
+}
 .footer__contacts-hours {
   margin-top: -0.25rem;
+}
+.footer__contacts-socmedia {
+  display: flex;
+  gap: 0.75rem;
 }
 .footer__part-2 {
   display: flex;
@@ -732,6 +858,15 @@ body {
   margin-left: 9.7%;
   margin-right: 9.7%;
   padding-bottom: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+  .footer__part-2 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 4.3%;
+    margin-right: 4.3%;
+    font-size: 0.75rem;
+  }
 }
 
 .about__second-page-link_left {
@@ -790,4 +925,4 @@ body {
   min-width: 320px;
   max-width: 1440px;
   margin: 0 auto;
-}/*# sourceMappingURL=style.css.map */
+}

@@ -10,6 +10,11 @@
     &-title {
       font-size: 2.5rem;
       line-height: 1.4;
+
+      @media screen and (max-width: $tablet) {
+        font-size: 2rem;
+        line-height: 100%;
+      }
     }
 
     &-link {
@@ -17,6 +22,11 @@
       margin-top: -0.3rem;
       margin-right: 0.5rem;
       transition: $transition;
+
+      @media screen and (max-width: $tablet) {
+        font-size: 0.875rem;
+        margin-right: 0;
+      }
 
       &-text {
         color: $grey;
@@ -42,22 +52,57 @@
               'item-4 item-2 item-3'
               'item-4 item-5 item-5';
 
+    @media screen and (max-width: $small-desktop) {
+      grid-template-columns: 1fr 1fr;
+
+      grid-template-areas:
+                'item-1 item-2'
+                'item-4 item-2'
+                'item-4 item-5';
+    }
+
+    @media screen and (max-width: $tablet) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 8.75rem 29.75rem 17.43rem;
+      grid-template-areas:
+                'item-1 item-1'
+                'item-2 item-4'
+                'item-5 item-5';
+    }
+
+
     &-item {
+      cursor: pointer;
       color: $white;
       position: relative;
+
       &-1 {
         grid-area: item-1;
-        padding-left: 1.5rem;
-        padding-bottom: 1.5rem;
-        line-height: 1.2;
         display: flex;
         align-items: flex-end;
+        p {
+          padding-left: 1.5rem;
+          padding-bottom: 1.5rem;
+          padding-right: 1.5rem;
+          line-height: 1.2;
+
+          @media screen and (max-width: $tablet) {
+            font-size: 1rem;
+            max-width: 44%;
+            padding-left: 1rem;
+            padding-bottom: 1rem;
+            padding-right: 0;
+          }
+        }
       }
       &-2 {
         grid-area: item-2;
       }
       &-3 {
         grid-area: item-3;
+        @media screen and (max-width: $small-desktop) {
+          display: none;
+        }
       }
       &-4 {
         grid-area: item-4;
@@ -80,6 +125,10 @@
       position: absolute;
       top: 0;
       right: 0;
+
+      @media screen and (max-width: $tablet) {
+        max-width: 19%;
+      }
     }
   }
 }
