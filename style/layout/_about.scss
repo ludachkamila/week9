@@ -7,7 +7,9 @@
           font-size: 2.5rem;
 
           @media screen and (max-width: $mobile) {
-            font-size: 1.5rem;
+            font-size: 1.25rem;
+            margin-top: -2.1rem;
+
           }
 
           @media (min-width: $mobile) and (max-width: $tablet) {
@@ -23,7 +25,10 @@
           font-size: 1.25rem;
 
           @media screen and (max-width: $mobile) {
-            font-size: 0.8rem;
+            font-size: 0.875rem;
+            margin-top: -0.45rem;
+            width: 19rem;
+            line-height: 1.3rem;
           }
 
           @media (min-width: $mobile) and (max-width: $tablet) {
@@ -38,6 +43,9 @@
   &__link-item {
           margin-top: 0.256rem;
           margin-left: -0.18rem;
+          @media screen and (max-width: $mobile) {
+            margin-top: -0.250rem;
+          }
           @media (min-width: $mobile) and (max-width: $tablet) {
             margin-top: -0.8rem;
           }
@@ -47,6 +55,10 @@
           font-size: 1rem;
           border-bottom: $red solid 0.09rem;
           padding: 0.1rem;
+
+          @media screen and (max-width: $mobile) {
+            font-size: 0.750rem;
+          }
 
           @media (min-width: $mobile) and (max-width: $tablet){
             font-size: 0.875rem;
