@@ -3,6 +3,11 @@
     line-height: 1;
 }
 
+.production__heading{
+    display: flex;
+    justify-content: space-between;
+}
+
 .production__contents {
     display: flex;
     justify-content: space-between;
