@@ -251,8 +251,10 @@ body {
   grid-area: 4/2/5/4;
 }
 .catalogue-item {
+.catalogue-item {
   position: relative;
 }
+.catalogue-item span {
 .catalogue-item span {
   position: absolute;
   padding: 1rem 1.5rem;
@@ -263,9 +265,11 @@ body {
   transition: all 0.5s ease-in;
 }
 .catalogue-item span:hover {
+.catalogue-item span:hover {
   color: #1A453E;
 }
 
+.catalogue-item-1 {
 .catalogue-item-1 {
   background-image: url("../assets/images/2-сatalogue/rectangle-1.svg");
   background-repeat: no-repeat;
@@ -273,11 +277,13 @@ body {
 }
 
 .catalogue-item-2 {
+.catalogue-item-2 {
   background-image: url("../assets/images/2-сatalogue/rectangle-2.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+.catalogue-item-3 {
 .catalogue-item-3 {
   background-image: url("../assets/images/2-сatalogue/rectangle-3.svg");
   background-repeat: no-repeat;
@@ -285,11 +291,13 @@ body {
 }
 
 .catalogue-item-4 {
+.catalogue-item-4 {
   background-image: url("../assets/images/2-сatalogue/rectangle-4.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+.catalogue-item-5 {
 .catalogue-item-5 {
   background-image: url("../assets/images/2-сatalogue/rectangle-5.svg");
   background-repeat: no-repeat;
@@ -297,11 +305,13 @@ body {
 }
 
 .catalogue-item-6 {
+.catalogue-item-6 {
   background-image: url("../assets/images/2-сatalogue/rectangle-6.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+.catalogue-item-7 {
 .catalogue-item-7 {
   background-image: url("../assets/images/2-сatalogue/rectangle-7.svg");
   background-repeat: no-repeat;
@@ -309,11 +319,13 @@ body {
 }
 
 .catalogue-item-8 {
+.catalogue-item-8 {
   background-image: url("../assets/images/2-сatalogue/rectangle-8.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+.catalogue-item-9 {
 .catalogue-item-9 {
   background-image: url("../assets/images/2-сatalogue/rectangle-9.svg");
   background-repeat: no-repeat;
@@ -321,11 +333,13 @@ body {
 }
 
 .catalogue-item-10 {
+.catalogue-item-10 {
   background-image: url("../assets/images/2-сatalogue/rectangle-10.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+.catalogue-item-11 {
 .catalogue-item-11 {
   background-image: url("../assets/images/2-сatalogue/rectangle-11.svg");
   background-repeat: no-repeat;
@@ -333,18 +347,22 @@ body {
 }
 
 .innovations__header {
+.innovations__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1.5rem;
 }
 .innovations__title {
+.innovations__title {
   font-size: 2.5rem;
 }
+.innovations__all {
 .innovations__all {
   margin-top: -0.15rem;
   margin-right: 0.2rem;
 }
+.innovations__all a {
 .innovations__all a {
   color: #3B3B3B;
   font-size: 1rem;
@@ -352,13 +370,16 @@ body {
   padding: 0.1rem;
 }
 .innovations__all a img {
+.innovations__all a img {
   padding-left: 0.3rem;
   padding-bottom: 0.1rem;
 }
 .innovations__container {
+.innovations__container {
   display: flex;
   justify-content: space-between;
 }
+.innovations__item-img {
 .innovations__item-img {
   padding: 1.25rem 2rem 0.8rem;
   border: 1px solid #E3E3E3;
@@ -366,14 +387,17 @@ body {
   position: relative;
 }
 .innovations__item-img-pic {
+.innovations__item-img-pic {
   width: 100%;
 }
+.innovations__item-img-new {
 .innovations__item-img-new {
   position: absolute;
   top: 1rem;
   right: 0rem;
   max-width: 21.5%;
 }
+.innovations__item-description {
 .innovations__item-description {
   max-width: 11rem;
   min-height: 7.8rem;
@@ -383,14 +407,17 @@ body {
   gap: 0.65rem;
 }
 .innovations__item-description-text {
+.innovations__item-description-text {
   font-size: 1rem;
   line-height: 1.2;
 }
+.innovations__item-description-colors {
 .innovations__item-description-colors {
   display: flex;
   gap: 0.25rem;
   align-items: center;
 }
+.innovations__item-description-all-colors {
 .innovations__item-description-all-colors {
   font-size: 0.75rem;
   padding-left: 0.25rem;
@@ -398,10 +425,12 @@ body {
 }
 
 .production__title {
+.production__title {
   font-size: 2.5rem;
   line-height: 1;
 }
 
+.production__contents {
 .production__contents {
   display: flex;
   justify-content: space-between;
@@ -410,9 +439,11 @@ body {
   padding-bottom: 1.8rem;
 }
 .production__contents p {
+.production__contents p {
   line-height: 1.4;
 }
 
+.production__video {
 .production__video {
   display: flex;
   align-items: center;
@@ -420,44 +451,54 @@ body {
   margin-right: 6rem;
 }
 .production__video-title {
+.production__video-title {
   position: absolute;
   right: 5rem;
   white-space: nowrap;
 }
 .production__video-ellips {
+.production__video-ellips {
   position: absolute;
   right: 0;
 }
+.production__video-play {
 .production__video-play {
   position: absolute;
   right: 1.7rem;
 }
 
 .production__gallery {
+.production__gallery {
   position: relative;
 }
+.production__gallery-btn {
 .production__gallery-btn {
   position: absolute;
   top: calc(50% - 1.7rem);
   max-width: 5%;
 }
 .production__gallery-btn-left {
+.production__gallery-btn-left {
   left: -2.5%;
 }
+.production__gallery-btn-right {
 .production__gallery-btn-right {
   right: -2.5%;
 }
 
+.production__img-container {
 .production__img-container {
   display: flex;
   justify-content: space-between;
   gap: 0.5rem;
 }
 .production__img-container img {
+.production__img-container img {
   width: 100%;
   height: auto;
 }
 
+.interiors {
 .interiors {
   padding-top: 2.2rem;
 }
@@ -560,6 +601,35 @@ body {
 }
 .interiors__grid-item-5 {
   grid-area: item-5;
+}
+.interiors__grid .interiors__grid-item-1 {
+  background: url("../assets/images/5-interiors/rect-1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.interiors__grid .interiors__grid-item-2 {
+  background: url("../assets/images/5-interiors/rect-2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.interiors__grid .interiors__grid-item-3 {
+  background: url("../assets/images/5-interiors/rect-3.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.interiors__grid .interiors__grid-item-4 {
+  background: url("../assets/images/5-interiors/rect-4.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.interiors__grid .interiors__grid-item-5 {
+  background: url("../assets/images/5-interiors/rect-5.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .interiors__grid .interiors__grid-item-1 {
   background: url("../assets/images/5-interiors/rect-1.svg");
