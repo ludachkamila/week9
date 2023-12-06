@@ -13,7 +13,7 @@
   padding-top: 2.9rem;
   padding-bottom: 3rem;
 
-  @media screen and (max-width: $tablet) {
+  @media screen and (max-width: $large-tablet) {
     padding-left: 4.3%;
     padding-right: 4.3%;
     padding-top: 2.25rem;
@@ -26,4 +26,10 @@
     padding-top: 1.75rem;
     padding-bottom: 1.75rem;
   }
+
+  @media screen and (max-width: $small-mobile) {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
 }
