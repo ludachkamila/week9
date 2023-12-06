@@ -225,6 +225,12 @@ body {
     margin-top: -3%;
   }
 }
+@media (min-width: 600px) and (max-width: 768px) {
+  .slider__corousel-button {
+    max-width: 7.5%;
+    top: 46.2%;
+  }
+}
 @media screen and (max-width: 376px) {
   .slider__corousel-button {
     margin-top: 1%;
