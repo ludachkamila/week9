@@ -88,6 +88,10 @@
           @media screen and (max-width: $mobile) {
             width: 21.5rem;
           }
+
+          @media screen and (max-width: 290px) {
+            width: 18rem;
+          }
       }
   }
 }

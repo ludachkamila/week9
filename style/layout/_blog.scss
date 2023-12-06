@@ -69,6 +69,9 @@
             @media screen and (max-width: $mobile) {
               width: 10rem;
             }
+            @media screen and (max-width: 290px) {
+              width: 8rem;
+            }
       }
         p {
             font-size: 1rem;
@@ -92,6 +95,11 @@
               line-height: 1rem;
             }
 
+            @media screen and (max-width: 290px) {
+              width: 10rem;
+              font-size: 0.6rem;
+            }
+
       }
     }
     &-button {
@@ -103,18 +111,19 @@
         @media screen and (max-width: $large-tablet) {
           top: 25%;
         }
-        
         @media screen and (max-width: $tablet) {
           top: 19%;
           max-width: 7.5%;
         }
-
         @media screen and (max-width: $large-mobile) {
           margin-top: 3.5%;
           max-width: 8%;
         }
         @media screen and (max-width: $mobile) {
           margin-top: 4%;
+        }
+        @media screen and (max-width: 290px) {
+          margin-top: 2%;;
         }
 
       &_left {
@@ -129,6 +138,9 @@
           @media screen and (max-width: $mobile) {
             left: -3.7%;
           }
+          @media screen and (max-width: 290px) {
+            left: -3.7%;
+          }
       }
       &_right {
           right: -2.5%;
@@ -140,6 +152,9 @@
             right: -4.5%;
           }
           @media screen and (max-width: $mobile) {
+            right: -3.7%;
+          }
+          @media screen and (max-width: 290px) {
             right: -3.7%;
           }
       }
