@@ -3,7 +3,7 @@
     margin-top: -1.8rem;
 
     &-button {
-        position: absolute;
+        osition: absolute;
         z-index: 2;
         top: 49.2%;
         max-width: 5%;
@@ -20,7 +20,7 @@
             max-width: 7.5%;
             top: 46.2%;
         }
-            
+
             &_left {
               left: -2.5%;
 
@@ -28,15 +28,15 @@
                 left: -3.8%;
               }
             }
-      
+
             &_right {
               right: -2.5%;
 
               @media (min-width: $large-mobile) and (max-width: $tablet) {
                 right: -3.8%;
               }
-            } 
-    }   
+            }
+    }
 
     &-item {
         position: relative;
