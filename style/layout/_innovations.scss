@@ -5,9 +5,15 @@
     align-items: center;
     margin-bottom: 1.5rem;
   }
-
+  
   &__title {
     font-size: 2.5rem;
+    @media screen and (max-width: $tablet){
+      font-size: 2rem;
+    }
+    @media screen and (max-width: $mobile){
+      font-size: 1.25rem;
+    }
   }
 
   &__all {
@@ -19,6 +25,12 @@
       font-size: 1rem;
       border-bottom: $red solid 0.09rem;
       padding: 0.1rem ;
+      @media screen and (max-width: $mobile){
+        font-size: 0.75rem;
+      }
+      @media screen and (max-width: $tablet){
+        font-size: 0.875rem;
+      }
     }
 
     a {
@@ -32,8 +44,8 @@
   &__container {
     display: flex;
     justify-content: space-between;
-  }
 
+  }
   &__item-img {
     padding: 1.25rem 2rem 0.8rem;
     border: 1px solid $gray-frame;
@@ -42,6 +54,7 @@
 
     &-pic {
       width: 100%;
+      
     }
 
     &-new {

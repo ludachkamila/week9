@@ -160,7 +160,8 @@ body {
   display: grid;
   grid-template-columns: repeat(5, max-content);
   grid-template-rows: 1fr;
-  column-gap: 3.5rem;
+  -moz-column-gap: 3.5rem;
+       column-gap: 3.5rem;
 }
 @media screen and (max-width: 1260px) {
   .header__nav-container {
@@ -523,8 +524,34 @@ body {
   align-items: center;
   margin-bottom: 1.5rem;
 }
+@media screen and (max-width: 768px) {
+  .innovations__item {
+    min-height: 20.625rem;
+    gap: 2.06rem;
+  }
+}
+@media screen and (max-width: 376px) {
+  .innovations__item {
+    min-height: 16.68rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .innovations__item_4 {
+    display: none;
+  }
+}
 .innovations__title {
   font-size: 2.5rem;
+}
+@media screen and (max-width: 768px) {
+  .innovations__title {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 376px) {
+  .innovations__title {
+    font-size: 1.25rem;
+  }
 }
 .innovations__all {
   margin-top: -0.15rem;
@@ -535,6 +562,16 @@ body {
   font-size: 1rem;
   border-bottom: #8C4A37 solid 0.09rem;
   padding: 0.1rem;
+}
+@media screen and (max-width: 376px) {
+  .innovations__all a {
+    font-size: 0.75rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .innovations__all a {
+    font-size: 0.875rem;
+  }
 }
 .innovations__all a img {
   padding-left: 0.3rem;
@@ -1524,7 +1561,8 @@ body {
     grid-template-columns: 1.8fr 0.7fr 2fr;
     grid-template-rows: repeat(2, min-content);
     grid-auto-flow: column;
-    column-gap: 3.5rem;
+    -moz-column-gap: 3.5rem;
+         column-gap: 3.5rem;
     row-gap: 0;
     padding-bottom: 2.5rem;
   }
@@ -1628,4 +1666,4 @@ body {
   min-width: 320px;
   max-width: 1440px;
   margin: 0 auto;
-}
+}/*# sourceMappingURL=style.css.map */
