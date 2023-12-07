@@ -97,50 +97,42 @@
     }
   }
 
-  // &-button {
-  //   position: absolute;
-  //   z-index: 2;
-  //   top: 42.5%;
-  //   max-width: 5%;
+  &-button {
+    position: absolute;
+    z-index: 2;
+    top: 44%;
+    max-width: 5%;
 
-  //   @media screen and (max-width: $tablet) {
-  //     max-width: 7.5%;
-  //     top: 40%;
-  //   }
-  //   @media screen and (max-width: $large-mobile) {
-  //     max-width: 10%;
-  //   }
-  //   @media screen and (max-width: $mobile) {
-  //     max-width: 7.9%;
-  //     top: 39%;
-  //   }
+    @media screen and (max-width: $tablet) {
+      max-width: 7.5%;
+    }
 
-  //   &_left {
-  //     left: -2.5%;
+    &_left {
+      left: -2.5%;
 
-  //     @media screen and (max-width: $tablet) {
-  //       left: -4%;
-  //     }
-  //     @media screen and (max-width: $large-mobile) {
-  //       left: -4%;
-  //     }
-  //     @media screen and (max-width: $mobile) {
-  //       left: -4%;
-  //     }
-  //   }
+      @media screen and (max-width: $tablet) {
+        left: -4%;
+      }
 
-  //   &_right {
-  //     right: -2.5%;
+      @media screen and (max-width: $small-mobile) {
+        left: 19%;
+      }
+    }
 
-  //     @media screen and (max-width: $tablet) {
-  //       right: -4%;
-  //     }
-  //     @media screen and (max-width: $large-mobile) {
-  //       right: -4%;
-  //     }
-  //     @media screen and (max-width: $mobile) {
-  //       right: -4.65%;
-  //     }
-  //   }
-  //}
+    &_right {
+      right: -2.5%;
+
+      @media screen and (max-width: $tablet) {
+        right: -4%;
+      }
+
+      @media screen and (max-width: $mobile) {
+        right: -4.65%;
+      }
+
+      @media screen and (max-width: $small-mobile) {
+        right: 19%;
+      }
+    }
   }
+}

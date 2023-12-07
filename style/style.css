@@ -1083,6 +1083,48 @@ body {
     font-size: 0.6rem;
   }
 }
+.projects__carousel-button {
+  position: absolute;
+  z-index: 2;
+  top: 44%;
+  max-width: 5%;
+}
+@media screen and (max-width: 768px) {
+  .projects__carousel-button {
+    max-width: 7.5%;
+  }
+}
+.projects__carousel-button_left {
+  left: -2.5%;
+}
+@media screen and (max-width: 768px) {
+  .projects__carousel-button_left {
+    left: -4%;
+  }
+}
+@media screen and (max-width: 350px) {
+  .projects__carousel-button_left {
+    left: 19%;
+  }
+}
+.projects__carousel-button_right {
+  right: -2.5%;
+}
+@media screen and (max-width: 768px) {
+  .projects__carousel-button_right {
+    right: -4%;
+  }
+}
+@media screen and (max-width: 376px) {
+  .projects__carousel-button_right {
+    right: -4.65%;
+  }
+}
+@media screen and (max-width: 350px) {
+  .projects__carousel-button_right {
+    right: 19%;
+  }
+}
 
 .main__blog {
   margin-top: -0.6rem;
