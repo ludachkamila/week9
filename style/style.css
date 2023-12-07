@@ -160,7 +160,8 @@ body {
   display: grid;
   grid-template-columns: repeat(5, max-content);
   grid-template-rows: 1fr;
-  column-gap: 3.5rem;
+  -moz-column-gap: 3.5rem;
+       column-gap: 3.5rem;
 }
 @media screen and (max-width: 1260px) {
   .header__nav-container {
@@ -590,6 +591,7 @@ body {
   .production p {
     font-size: 1rem;
     line-height: 1.6rem;
+    max-width: 31.37rem;
   }
 }
 @media screen and (max-width: 376px) {
@@ -643,18 +645,22 @@ body {
   display: flex;
   align-items: center;
   position: relative;
-  margin-right: 6rem;
+  margin-left: 5rem;
+}
+@media screen and (max-width: 980px) {
+  .production__video {
+    margin-left: 3rem;
+  }
 }
 @media screen and (max-width: 768px) {
   .production__video {
-    justify-content: start;
     margin-bottom: 2.44rem;
     min-height: 5rem;
+    margin-left: 0rem;
   }
 }
 @media screen and (max-width: 376px) {
   .production__video {
-    justify-content: start;
     margin-bottom: 2.44rem;
     min-height: 5rem;
     margin-right: 3rem;
@@ -662,16 +668,34 @@ body {
 }
 .production__video-title {
   position: absolute;
-  right: 5rem;
-  white-space: nowrap;
 }
 .production__video-ellips {
   position: absolute;
-  right: 0;
+  left: 10.8rem;
+}
+@media screen and (max-width: 768px) {
+  .production__video-ellips {
+    left: 8.7rem;
+  }
+}
+@media screen and (max-width: 376px) {
+  .production__video-ellips {
+    left: 7rem;
+  }
 }
 .production__video-play {
   position: absolute;
-  right: 1.7rem;
+  left: 12.5rem;
+}
+@media screen and (max-width: 768px) {
+  .production__video-play {
+    left: 10.2rem;
+  }
+}
+@media screen and (max-width: 376px) {
+  .production__video-play {
+    left: 8.8rem;
+  }
 }
 
 .production__gallery {
@@ -1554,7 +1578,8 @@ body {
     grid-template-columns: 1.8fr 0.7fr 2fr;
     grid-template-rows: repeat(2, min-content);
     grid-auto-flow: column;
-    column-gap: 3.5rem;
+    -moz-column-gap: 3.5rem;
+         column-gap: 3.5rem;
     row-gap: 0;
     padding-bottom: 2.5rem;
   }
@@ -1658,4 +1683,4 @@ body {
   min-width: 320px;
   max-width: 1440px;
   margin: 0 auto;
-}
+}/*# sourceMappingURL=style.css.map */

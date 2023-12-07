@@ -6,8 +6,8 @@
         @media screen and (max-width: $tablet) {
             font-size: 1rem;
             line-height: 1.6rem;
+            max-width: 31.37rem;
         }
-
         @media screen and (max-width: $mobile) {
             font-size: 0.87rem;
             line-height: 1.3rem;
@@ -23,7 +23,6 @@
         margin-bottom: 1rem;
         font-size: 2rem;
     }
-
     @media screen and (max-width: $mobile) {
         font-size: 1.25rem;
     }
@@ -54,16 +53,17 @@
     display: flex;
     align-items: center;
     position: relative;
-    margin-right: 6rem;
+    margin-left: 5rem;
 
+    @media screen and (max-width: $large-tablet) {
+        margin-left: 3rem;
+    }
     @media screen and (max-width: $tablet) {
-        justify-content: start;
         margin-bottom: 2.44rem;
         min-height: 5rem;
+        margin-left: 0rem;
     }
-
     @media screen and (max-width: $mobile) {
-        justify-content: start;
         margin-bottom: 2.44rem;
         min-height: 5rem;
         margin-right: 3rem;
@@ -71,18 +71,30 @@
 
     &-title{
         position: absolute;
-        right: 5rem;
-        white-space: nowrap;
     }
 
     &-ellips{
         position: absolute;
-        right: 0;
+        left: 10.8rem;
+
+        @media screen and (max-width: $tablet) {
+            left: 8.7rem;
+        } 
+        @media screen and (max-width: $mobile) {
+            left: 7rem;
+        }
     }
 
     &-play{
         position: absolute;
-        right: 1.7rem;
+        left: 12.5rem;
+
+        @media screen and (max-width: $tablet) {
+            left: 10.2rem;
+        } 
+        @media screen and (max-width: $mobile) {
+            left: 8.8rem;
+        }
     }
 }
 
@@ -90,18 +102,18 @@
     position: relative;
 
     &-btn{
-      position: absolute;
-      top: calc(50% - 1.7rem);
-      max-width: 5%;
+        position: absolute;
+        top: calc(50% - 1.7rem);
+        max-width: 5%;
 
-      &-left{
-        left: -2.5%;
-      }
+        &-left{
+            left: -2.5%;
+        }
 
-      &-right{
-        right: -2.5%;
-      }
-    }
+        &-right{
+            right: -2.5%;
+        }
+        }
 }
 .production__img-container{
     display: flex;
@@ -130,7 +142,7 @@
     }
 
     img{
-      width: 100%;
-      height: auto;
+        width: 100%;
+        height: auto;
     }
 }
