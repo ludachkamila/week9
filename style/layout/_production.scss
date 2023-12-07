@@ -1,101 +1,106 @@
-.production{
-    p {
-        font-size: 1.25rem;
-        line-height: 1.6rem;
-
-        @media screen and (max-width: $tablet) {
-            font-size: 1rem;
-            line-height: 1.6rem;
-            max-width: 31.37rem;
-        }
-        @media screen and (max-width: $mobile) {
-            font-size: 0.87rem;
-            line-height: 1.3rem;
-        }
-    }
-}
-
 .production__title {
-    margin-bottom: 1.44rem;
-    font-size: 2.5rem;
-    
-    @media screen and (max-width: $tablet) {
-        margin-bottom: 1rem;
-        font-size: 2rem;
-    }
-    @media screen and (max-width: $mobile) {
-        font-size: 1.25rem;
-    }
+  font-size: 2.5rem;
+
+  @media screen and (max-width: $tablet) {
+    font-size: 2rem;
+  }
+  @media screen and (max-width: $mobile) {
+    font-size: 1.25rem;
+  }
 }
 
 .production__heading{
-    display: grid;
-    grid-template-columns: 55% 45%;
-    margin-bottom: 1rem;
-    @media screen and (max-width: $tablet) {
-        display: block;
-    }
+  display: grid;
+  grid-template-columns: 2.15fr 1fr;
+  margin-bottom: 1rem;
+
+  @media screen and (max-width: $extra-large-tablet) {
+    grid-template-columns: 1fr 0.8fr;
+  }
+
+  @media screen and (max-width: $tablet) {
+    display: block;
+    margin-bottom: 2.2rem;
+  }
+
+  @media screen and (max-width: $tablet) {
+    margin-bottom: 0.75rem;
+  }
 }
 
 .production__contents {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+  font-size: 1.25rem;
+  line-height: 1.6rem;
+  padding-top: 2.4rem;
+  padding-bottom: 1rem;
+  max-width: 75%;
 
-    @media screen and (max-width: $tablet) {
-        margin-bottom: 1rem;
-    }
+  @media screen and (max-width: $tablet) {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    max-width: 31.37rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+  }
+
+  @media screen and (max-width: $middle-mobile) {
+    font-size: 0.87rem;
+    line-height: 1.4rem;
+    max-width: 95%;
+    padding-bottom: 0;
+  }
 }
 
 .production__video {
-    display: flex;
-    align-items: center;
-    position: relative;
-    margin-left: 5rem;
+  display: flex;
+  align-items: center;
+  position: relative;
 
-    @media screen and (max-width: $large-tablet) {
-        margin-left: 3rem;
-    }
-    @media screen and (max-width: $tablet) {
-        margin-bottom: 2.44rem;
-        min-height: 5rem;
-        margin-left: 0rem;
-    }
-    @media screen and (max-width: $mobile) {
-        margin-bottom: 2.44rem;
-        min-height: 5rem;
-        margin-right: 3rem;
-    }
+  @media screen and (max-width: $large-tablet) {
+      margin-left: 3rem;
+  }
+  @media screen and (max-width: $tablet) {
+      min-height: 5rem;
+      margin-left: 0rem;
+  }
 
-    &-title{
-        position: absolute;
-    }
+  &-title{
+      position: absolute;
+      @media screen and (max-width: $tablet) {
+        font-size: 1rem;
+      }
+      @media screen and (max-width: $mobile) {
+        font-size: 0.875rem;
+      }
+  }
 
-    &-ellips{
-        position: absolute;
-        left: 10.8rem;
+  &-ellips{
+      position: absolute;
+      left: 10.8rem;
 
-        @media screen and (max-width: $tablet) {
-            left: 8.7rem;
-        } 
-        @media screen and (max-width: $mobile) {
-            left: 7rem;
-        }
-    }
+      @media screen and (max-width: $tablet) {
+          left: 8.7rem;
+          max-width: 5rem;
+      }
+      @media screen and (max-width: $mobile) {
+          left: 8rem;
+          max-width: 3.2rem;
+      }
+  }
 
-    &-play{
-        position: absolute;
-        left: 12.5rem;
+  &-play{
+      position: absolute;
+      left: 12.5rem;
 
-        @media screen and (max-width: $tablet) {
-            left: 10.2rem;
-        } 
-        @media screen and (max-width: $mobile) {
-            left: 8.8rem;
-        }
-    }
+      @media screen and (max-width: $tablet) {
+          left: 10.2rem;
+          max-width: 1.5rem;
+      }
+      @media screen and (max-width: $mobile) {
+          left: 8.8rem;
+          max-width: 1.5rem;
+      }
+  }
 }
 
 .production__gallery{
