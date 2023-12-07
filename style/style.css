@@ -1048,6 +1048,11 @@ body {
   line-height: 1.5;
 }
 
+.projects {
+  display: flex;
+  flex-direction: column;
+}
+
 .projects__text {
   margin-bottom: 1.6rem;
   font-size: 2.5rem;
@@ -1074,11 +1079,18 @@ body {
 }
 
 .projects__carousel {
+  align-self: center;
+  padding-left: 3%;
+  padding-right: 3%;
+  margin: 0 auto;
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 .projects__carousel-container {
+  flex: 0 0 auto;
   width: 72.5rem;
-  margin: 0 auto;
+  margin: 0;
   overflow: hidden;
 }
 @media screen and (max-width: 1420px) {
@@ -1163,9 +1175,9 @@ body {
   }
 }
 .projects__carousel-button {
-  position: absolute;
+  flex: 0 0 auto;
+  position: relative;
   z-index: 2;
-  top: 44%;
   max-width: 5%;
 }
 @media screen and (max-width: 768px) {
@@ -1174,34 +1186,24 @@ body {
   }
 }
 .projects__carousel-button_left {
-  left: -2.5%;
+  left: 2.5%;
 }
 @media screen and (max-width: 768px) {
   .projects__carousel-button_left {
-    left: -4%;
-  }
-}
-@media screen and (max-width: 350px) {
-  .projects__carousel-button_left {
-    left: 19%;
+    left: 3.5%;
   }
 }
 .projects__carousel-button_right {
-  right: -2.5%;
+  right: 2.5%;
 }
 @media screen and (max-width: 768px) {
   .projects__carousel-button_right {
-    right: -4%;
+    right: 3.5%;
   }
 }
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 570px) {
   .projects__carousel-button_right {
-    right: -4.65%;
-  }
-}
-@media screen and (max-width: 350px) {
-  .projects__carousel-button_right {
-    right: 19%;
+    right: 4.5%;
   }
 }
 
