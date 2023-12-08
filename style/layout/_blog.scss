@@ -103,6 +103,7 @@
       top: -1.2rem;
       z-index: 2;
       max-width: 6%;
+      cursor: pointer;
 
       @media screen and (max-width: $tablet) {
         max-width: 7.5%;
