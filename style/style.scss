@@ -16,6 +16,10 @@
 
 
 /*general styles*/
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   @extend %main-font;
   min-width: 320px;

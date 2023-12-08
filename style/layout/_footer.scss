@@ -134,6 +134,7 @@
     &-tel {
       font-size: 1.5rem;
       line-height: 100%;
+      color: $grey;
     }
 
     &-content {
@@ -160,6 +161,15 @@
 
     &-hours {
       margin-top: -0.25rem;
+      color: $grey;
+    }
+
+    &-addresses {
+      color: $grey;
+    }
+
+    &-email {
+      color: $grey;
     }
 
     &-socmedia {

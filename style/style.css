@@ -80,6 +80,7 @@ body {
 }
 .top__tel-number {
   font-weight: 700;
+  color: #3B3B3B;
 }
 .top__tel-order-call {
   text-transform: uppercase;
@@ -100,10 +101,12 @@ body {
     gap: 2.2rem;
   }
 }
-.top__locations {
+.top__locations a {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.25rem;
+  color: #3B3B3B;
 }
 @media screen and (max-width: 740px) {
   .top__locations {
@@ -1687,6 +1690,7 @@ body {
 .footer__contacts-tel {
   font-size: 1.5rem;
   line-height: 100%;
+  color: #3B3B3B;
 }
 .footer__contacts-content {
   display: flex;
@@ -1715,6 +1719,13 @@ body {
 }
 .footer__contacts-hours {
   margin-top: -0.25rem;
+  color: #3B3B3B;
+}
+.footer__contacts-addresses {
+  color: #3B3B3B;
+}
+.footer__contacts-email {
+  color: #3B3B3B;
 }
 .footer__contacts-socmedia {
   display: flex;
@@ -1799,6 +1810,10 @@ body {
 }
 
 /*general styles*/
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-width: 320px;
   max-width: 1440px;

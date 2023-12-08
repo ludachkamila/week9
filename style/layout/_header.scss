@@ -25,6 +25,7 @@
 
     &-number {
       font-weight: 700;
+      color: $grey;
     }
 
     &-order-call {
@@ -48,9 +49,13 @@
   }
 
   &__locations {
-    display: flex;
-    align-items: center;
-    gap: 0.25rem;
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.25rem;
+      color: $grey;
+    }
 
     @media screen and (max-width: $large-mobile) {
       display: none;
