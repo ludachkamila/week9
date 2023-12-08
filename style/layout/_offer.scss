@@ -1,9 +1,11 @@
 .offer-page{
     padding-bottom: 0;
+
     &__item{
         color: $grey;
         font-size: 0.625rem;
     }
+
     &__title{
         padding-top: 1.5rem;
         padding-bottom: 2rem;
@@ -17,6 +19,7 @@
             font-size: 2rem;
             line-height: 2.34rem;
         }
+
         @media screen and (max-width: $mobile) {
             padding-top: 0.5rem;
             padding-bottom: 1rem;
@@ -24,7 +27,7 @@
             line-height: 1.46rem;
         }
     }
-} 
+}
 
 .offer-page-catalogue{
     display: grid;
@@ -39,23 +42,24 @@
         row-gap: 1.5rem;
         margin-bottom: 4.5rem;
     }
+
     @media screen and (max-width: $mobile) {
         grid-template-columns: 1fr;
         row-gap: 0.5rem;
         margin-bottom: 3.5rem;
     }
+
     &__item{
         position: relative;
-        transition: all 0.5s ease-in;
-        &:hover{
-            transform: scale(1.03);
-        }
+        @include animation-scale-min;
     }
+
     &__image{
         width: 100%;
         border-radius: 0.5rem;
         transition: all 0.5s ease-in;
     }
+
     &__button{
         margin-top: 1rem;
         border: #EFCF2C;
@@ -67,7 +71,8 @@
         position: absolute;
         right: 0;
         top: 0;
-    }   
+    }
+
     &__text{
         color: $white;
         font-size: 1rem;
@@ -80,6 +85,7 @@
         @media screen and (max-width: $large-tablet) {
             font-size: 0.875rem;
         }
+
         @media screen and (max-width: $mobile) {
             font-size: 0.5rem;
         }
