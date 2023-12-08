@@ -8,7 +8,7 @@
     grid-auto-rows: 10.5rem;
     gap: 2rem;
   }
-  
+
   @media screen and (max-width: $large-tablet) {
     grid-auto-rows: 10.2rem;
     gap: 1.5rem;
@@ -44,11 +44,7 @@
 
   &-item {
     position: relative;
-    transition: $transition;
-
-    &:hover{
-      transform: scale(1.08);
-    }
+    @include animation-scale;
 
     span {
       position: absolute;
@@ -57,7 +53,7 @@
       bottom: 0;
       font-size: 1.5rem;
       color: $grey;
-      
+
       @media screen and (max-width: $small-desktop) {
         font-size: 1.35rem;
         padding: 1rem 1rem;
@@ -67,12 +63,12 @@
         font-size: 1.30rem;
         padding: 0.5rem 1rem;
       }
-      
+
       @media screen and (max-width: $tablet) {
         font-size: 1.25rem;
         padding: 0.75rem 1rem;
       }
-      
+
       @media screen and (max-width: $mobile) {
         font-size: 1rem;
         padding: 0.75rem 0.75rem;

@@ -150,6 +150,8 @@
 
   &-item {
     position: relative;
+    cursor: pointer;
+    @include animation-scale-min;
 
     img {
       width: 17.75rem;

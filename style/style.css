@@ -670,6 +670,13 @@ body {
     row-gap: 0.2rem;
   }
 }
+.innovations__item {
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+}
+.innovations__item:hover {
+  transform: scale(1.08);
+}
 @media screen and (max-width: 980px) {
   .innovations__item:last-of-type {
     display: none;
@@ -912,6 +919,11 @@ body {
 }
 .production__carousel-item {
   position: relative;
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+}
+.production__carousel-item:hover {
+  transform: scale(0.95);
 }
 .production__carousel-item img {
   width: 17.75rem;
@@ -1304,6 +1316,11 @@ body {
 }
 .projects__carousel-item {
   position: relative;
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+}
+.projects__carousel-item:hover {
+  transform: scale(0.95);
 }
 .projects__carousel-item img {
   width: 17.75rem;
@@ -1446,6 +1463,13 @@ body {
   .blog__carousel-body {
     gap: 1rem;
   }
+}
+.blog__carousel-item {
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+}
+.blog__carousel-item:hover {
+  transform: scale(0.95);
 }
 .blog__carousel-item img {
   width: 17.75rem;

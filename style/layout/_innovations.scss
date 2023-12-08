@@ -82,6 +82,9 @@
   }
 
   &__item {
+    cursor: pointer;
+    @include animation-scale;
+
     @media screen and (max-width: $large-tablet) {
       &:last-of-type {
         display: none;
