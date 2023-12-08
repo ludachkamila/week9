@@ -523,15 +523,11 @@ body {
   align-items: center;
   margin-bottom: 1.5rem;
 }
-@media screen and (max-width: 768px) {
-  .innovations__header__item {
-    min-height: 12.8125rem;
-    gap: 2.06rem;
-  }
-}
-@media screen and (max-width: 768px) {
-  .innovations__header__item_4 {
-    display: none;
+@media screen and (max-width: 376px) {
+  .innovations__item {
+    width: 10.25rem;
+    -moz-columns: 2 10.25rem;
+         columns: 2 10.25rem;
   }
 }
 .innovations__title {
@@ -578,8 +574,25 @@ body {
 @media screen and (max-width: 376px) {
   .innovations__container {
     display: inline-block;
+<<<<<<< Updated upstream
     min-height: 100vh;
     column-count: 2;
+=======
+    min-height: 16.68rem;
+    -moz-column-count: 2;
+         column-count: 2;
+>>>>>>> Stashed changes
+  }
+}
+@media screen and (max-width: 768px) {
+  .innovations__container {
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 350px) {
+  .innovations__container {
+    width: 100%;
+    height: auto;
   }
 }
 .innovations__item-img {
@@ -588,8 +601,21 @@ body {
   border-radius: 0.5rem;
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  .innovations__item-img {
+    max-height: 20.625rem;
+  }
+  .innovations__item-img_4 {
+    display: none;
+  }
+}
 @media screen and (max-width: 376px) {
   .innovations__item-img {
+    width: 10.25rem;
+    height: 10.25rem;
+  }
+  .innovations__item-img_4 {
+    display: inline-block;
     width: 10.25rem;
   }
 }
@@ -599,6 +625,13 @@ body {
 @media screen and (max-width: 376px) {
   .innovations__item-img-pic {
     width: 5.9375rem;
+    height: 6.5625rem;
+  }
+}
+@media screen and (max-width: 350px) {
+  .innovations__item-img-pic {
+    width: 100%;
+    height: auto;
   }
 }
 .innovations__item-img-new {
@@ -615,14 +648,37 @@ body {
   flex-direction: column;
   gap: 0.65rem;
 }
+@media screen and (max-width: 768px) {
+  .innovations__item-description_4 {
+    display: none;
+  }
+}
+@media screen and (max-width: 376px) {
+  .innovations__item-description {
+    height: 6.4375rem;
+    display: inline-block;
+    -moz-columns: 2 10.25rem;
+         columns: 2 10.25rem;
+  }
+}
 .innovations__item-description-text {
   font-size: 1rem;
   line-height: 1.2;
+}
+@media screen and (max-width: 376px) {
+  .innovations__item-description-text {
+    font-size: 0.875rem;
+  }
 }
 .innovations__item-description-colors {
   display: flex;
   gap: 0.25rem;
   align-items: center;
+}
+@media screen and (max-width: 376px) {
+  .innovations__item-description-colors {
+    width: 1rem;
+  }
 }
 .innovations__item-description-all-colors {
   font-size: 0.75rem;
