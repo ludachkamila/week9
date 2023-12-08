@@ -17,7 +17,7 @@
 
     @media screen and (max-width: $small-desktop) {
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: repeat(2, fit-content());
+      grid-template-rows: repeat(2, min-content);
       grid-template-areas:
               'catalogue customers'
               'contacts contacts';
@@ -26,7 +26,7 @@
     @media screen and (max-width: $large-mobile) {
       padding-top: 1.8rem;
       grid-template-columns: 1fr;
-      grid-template-rows: repeat(3, fit-content());
+      grid-template-rows: repeat(3, min-content);
       grid-template-areas:
               'catalogue'
               'customers'
@@ -180,19 +180,13 @@
 
   .socmedia {
     &__img {
-      max-width: 2rem;
-
-      @media screen and (max-width: $large-mobile) {
-        max-width: 1.5rem;
-      }
+      max-width: 1.5rem;
     }
 
     &__item {
       @include animation-scale-max;
     }
   }
-
-
 
   &__part-2 {
     display: flex;
