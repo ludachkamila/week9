@@ -1545,7 +1545,7 @@ body {
   padding-bottom: 0.1rem;
 }
 .about__img-item {
-  background-image: url("../../assets/images/8-about/rectangle-159.svg");
+  background-image: url("../assets/images/8-about/rectangle-159.svg");
   width: 100%;
   height: 20rem;
   background-repeat: no-repeat;
@@ -1553,13 +1553,13 @@ body {
 }
 @media screen and (max-width: 768px) {
   .about__img-item {
-    background-image: url("../../assets/images/8-about/rectangle-160.svg");
+    background-image: url("../assets/images/8-about/rectangle-160.svg");
     height: 16rem;
   }
 }
 @media screen and (max-width: 376px) {
   .about__img-item {
-    background-image: url("../../assets/images/8-about/rectangle-161.svg");
+    background-image: url("../assets/images/8-about/rectangle-161.svg");
     height: 10.63rem;
   }
 }
