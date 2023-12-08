@@ -279,6 +279,7 @@ body {
   z-index: 2;
   top: 49.2%;
   max-width: 5%;
+  cursor: pointer;
 }
 @media screen and (max-width: 768px) {
   .slider__corousel-button {
@@ -952,6 +953,7 @@ body {
   position: relative;
   z-index: 2;
   max-width: 5%;
+  cursor: pointer;
 }
 @media screen and (max-width: 768px) {
   .production__carousel-button {
@@ -1375,6 +1377,7 @@ body {
   position: relative;
   z-index: 2;
   max-width: 5%;
+  cursor: pointer;
 }
 @media screen and (max-width: 768px) {
   .projects__carousel-button {
@@ -1521,6 +1524,7 @@ body {
   top: -1.2rem;
   z-index: 2;
   max-width: 6%;
+  cursor: pointer;
 }
 @media screen and (max-width: 768px) {
   .blog__carousel-button {
