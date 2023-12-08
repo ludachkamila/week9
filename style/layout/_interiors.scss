@@ -1,5 +1,11 @@
+
 .interiors {
   padding-top: 2.2rem;
+
+  @media screen and (max-width: $mobile) {
+    padding-top: 1.3rem;
+    padding-bottom: 1.5rem;
+  }
 
   &__heading {
     display: flex;
@@ -7,9 +13,22 @@
     align-items: center;
     padding-bottom: 1.3rem;
 
+    @media screen and (max-width: $mobile) {
+      padding-bottom: 1.1rem;
+    }
+
     &-title {
       font-size: 2.5rem;
       line-height: 1.4;
+
+      @media screen and (max-width: $tablet) {
+        font-size: 2rem;
+        line-height: 100%;
+      }
+
+      @media screen and (max-width: $mobile) {
+        font-size: 1.25rem;
+      }
     }
 
     &-link {
@@ -18,11 +37,30 @@
       margin-right: 0.5rem;
       transition: $transition;
 
+      @media screen and (max-width: $tablet) {
+        margin-right: 0;
+      }
+
+      img {
+        @media screen and (max-width: $mobile) {
+          max-width: 1.1rem;
+        }
+      }
+
       &-text {
         color: $grey;
         font-size: 1rem;
+
         &:hover {
           color: $main-green;
+        }
+
+        @media screen and (max-width: $tablet) {
+          font-size: 0.875rem;
+        }
+
+        @media screen and (max-width: $mobile) {
+          font-size: 0.75rem;
         }
       }
 
@@ -42,28 +80,114 @@
               'item-4 item-2 item-3'
               'item-4 item-5 item-5';
 
+    @media screen and (max-width: $small-desktop) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+                'item-1 item-2'
+                'item-4 item-2'
+                'item-4 item-5';
+    }
+
+    @media screen and (max-width: $tablet) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 8.75rem 29.75rem 17.43rem;
+      grid-template-areas:
+                'item-1 item-1'
+                'item-2 item-4'
+                'item-5 item-5';
+    }
+
+    @media screen and (max-width: $large-mobile) {
+      grid-template-columns: 1fr;
+      grid-template-rows: 7.375rem 25.375rem;
+      grid-template-areas:
+                'item-1'
+                'item-2';
+    }
+
     &-item {
+      cursor: pointer;
       color: $white;
       position: relative;
+
+      &-btn {
+        display: none;
+
+        @media screen and (max-width: $large-mobile) {
+          display: block;
+          position: absolute;
+          z-index: 2;
+          top: calc(50% - 0.625rem);
+          max-width: 6.9%;
+
+          &_left {
+            left: -3.2%;
+          }
+
+          &_right {
+            right: -3.2%;
+          }
+        }
+
+      }
+
       &-1 {
         grid-area: item-1;
-        padding-left: 1.5rem;
-        padding-bottom: 1.5rem;
-        line-height: 1.2;
         display: flex;
         align-items: flex-end;
+
+        p {
+          padding-left: 1.5rem;
+          padding-bottom: 1.5rem;
+          padding-right: 1.5rem;
+          line-height: 1.2;
+
+          @media screen and (max-width: $tablet) {
+            font-size: 1rem;
+            max-width: 44%;
+            padding-left: 1rem;
+            padding-bottom: 1rem;
+            padding-right: 0;
+          }
+
+          @media screen and (max-width: $large-mobile) {
+            font-size: 0.875rem;
+            max-width: 100%;
+            padding-right: 1.75rem;
+          }
+        }
       }
+
       &-2 {
         grid-area: item-2;
+
+        @media screen and (max-width: $large-mobile) {
+
+        }
       }
+
       &-3 {
         grid-area: item-3;
+
+        @media screen and (max-width: $small-desktop) {
+          display: none;
+        }
       }
+
       &-4 {
         grid-area: item-4;
+
+        @media screen and (max-width: $large-mobile) {
+          display: none;
+        }
       }
+
       &-5 {
         grid-area: item-5;
+
+        @media screen and (max-width: $large-mobile) {
+          display: none;
+        }
       }
     }
 
@@ -80,6 +204,10 @@
       position: absolute;
       top: 0;
       right: 0;
+
+      @media screen and (max-width: $tablet) {
+        max-width: 19%;
+      }
     }
   }
 }

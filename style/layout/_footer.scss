@@ -8,18 +8,50 @@
   }
 
   &__part-1{
+    padding-top: 2.5rem;
+    padding-bottom: 0;
     display: grid;
     grid-template-columns: 0.72fr 0.98fr 0.5fr;
-    padding-bottom: 2.3rem;
+    grid-template-areas:
+              'catalogue customers contacts';
+
+    @media screen and (max-width: $small-desktop) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(2, min-content);
+      grid-template-areas:
+              'catalogue customers'
+              'contacts contacts';
+    }
+
+    @media screen and (max-width: $large-mobile) {
+      padding-top: 1.8rem;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, min-content);
+      grid-template-areas:
+              'catalogue'
+              'customers'
+              'contacts';
+    }
   }
 
   &__catalogue {
+    grid-area: catalogue;
+    padding-bottom: 2.3rem;
     display: grid;
     grid-template-columns: 0.7fr 1fr;
     grid-template-rows: min-content 1fr;
     grid-template-areas:
         'catalogue-title catalogue-title'
         'catalogue-nav-1 catalogue-nav-2';
+
+    @media screen and (max-width: $small-desktop) {
+      padding-bottom: 2rem;
+    }
+
+    @media screen and (max-width: $large-mobile) {
+      padding-bottom: 1.9em;
+      grid-template-columns: 1fr 1.4fr;
+    }
 
     &-title {
       grid-area: catalogue-title;
@@ -29,6 +61,7 @@
       grid-area: catalogue-nav-1;
       list-style: none;
       @include footer-flex;
+
       a {
         color: $grey;
       }
@@ -45,12 +78,24 @@
   }
 
   &__customers {
+    grid-area: customers;
+    padding-bottom: 2.3rem;
     display: grid;
     grid-template-columns: 0.8fr 1fr;
     grid-template-rows: min-content 1fr;
     grid-template-areas:
         'customers-title-1 customers-title-2'
         'customers-nav-1 customers-nav-2';
+
+    @media screen and (max-width: $small-desktop) {
+      grid-template-columns: 1.8fr 1fr;
+      padding-bottom: 2rem;
+    }
+
+    @media screen and (max-width: $large-mobile) {
+      padding-bottom: 2.2em;
+      grid-template-columns: 1.32fr 1fr;
+    }
 
     &-title-1 {
       grid-area: customers-title-1;
@@ -80,6 +125,8 @@
   }
 
   &__contacts {
+    grid-area: contacts;
+
     &-title {
       padding-bottom: 1rem;
     }
@@ -87,14 +134,57 @@
     &-tel {
       font-size: 1.5rem;
       line-height: 100%;
+      color: $grey;
     }
 
     &-content {
       @include footer-flex;
+
+      @media screen and (max-width: $small-desktop) {
+        display: grid;
+        grid-template-columns: 1.8fr 0.7fr 2fr;
+        grid-template-rows: repeat(2, min-content);
+        grid-auto-flow: column;
+        column-gap: 3.5rem;
+        row-gap: 0;
+        padding-bottom: 2.5rem;
+      }
+
+      @media screen and (max-width: $large-mobile) {
+        display: flex;
+        flex-direction: column;
+        gap: 0.9rem;
+        max-width: 56%;
+        padding-bottom: 1.7rem;
+      }
     }
 
     &-hours {
       margin-top: -0.25rem;
+      color: $grey;
+    }
+
+    &-addresses {
+      color: $grey;
+    }
+
+    &-email {
+      color: $grey;
+    }
+
+    &-socmedia {
+      display: flex;
+      gap: 0.75rem;
+    }
+  }
+
+  .socmedia {
+    &__img {
+      max-width: 1.5rem;
+    }
+
+    &__item {
+      @include animation-scale-max;
     }
   }
 
@@ -107,5 +197,12 @@
     margin-right: 9.7%;
     padding-bottom: 1.5rem;
 
+    @media screen and (max-width: $tablet) {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      margin-left: 4.3%;
+      margin-right: 4.3%;
+      font-size: 0.75rem;
+    }
   }
 }
