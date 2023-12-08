@@ -65,14 +65,14 @@
             }
 
             @media screen and (max-width: $large-mobile) {
-                width: 23.5rem;
+                width: 100%;
             }
 
             @media screen and (max-width: $mobile) {
                 width: 21.5rem;
             }
-            @media screen and (max-width: 290px) {
-                width: 18.3rem;
+            @media screen and (max-width: 375px) {
+                width: 100%;
               }
         }
 
