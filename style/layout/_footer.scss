@@ -178,13 +178,25 @@
     }
   }
 
-  .socmedia__img {
-    max-width: 2rem;
+  .socmedia {
+    &__img {
+      max-width: 2rem;
 
-    @media screen and (max-width: $large-mobile) {
-      max-width: 1.5rem;
+      @media screen and (max-width: $large-mobile) {
+        max-width: 1.5rem;
+      }
+    }
+
+    &__item {
+      transition: $transition;
+
+      &:hover {
+        transform: scale(1.3);
+      }
     }
   }
+
+
 
   &__part-2 {
     display: flex;

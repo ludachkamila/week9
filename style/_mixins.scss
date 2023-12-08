@@ -3,3 +3,27 @@
   flex-direction: column;
   gap: 1rem;
 }
+
+@mixin link-underline {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    left: 0;
+    bottom: -0.3rem;
+    background-color: $main-green;
+    transition: $transition;
+
+  }
+
+  &:hover {
+    &::before {
+      color: $main-green;
+      width: 100%;
+    }
+  }
+
+}

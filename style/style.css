@@ -81,10 +81,40 @@ body {
 .top__tel-number {
   font-weight: 700;
   color: #3B3B3B;
+  position: relative;
+}
+.top__tel-number::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  left: 0;
+  bottom: -0.3rem;
+  background-color: #1A453E;
+  transition: all 0.5s ease-in;
+}
+.top__tel-number:hover::before {
+  color: #1A453E;
+  width: 100%;
 }
 .top__tel-order-call {
   text-transform: uppercase;
   color: #3B3B3B;
+  position: relative;
+}
+.top__tel-order-call::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  left: 0;
+  bottom: -0.3rem;
+  background-color: #1A453E;
+  transition: all 0.5s ease-in;
+}
+.top__tel-order-call:hover::before {
+  color: #1A453E;
+  width: 100%;
 }
 @media screen and (max-width: 740px) {
   .top__tel-order-call {
@@ -101,6 +131,23 @@ body {
   .top__other-contacts {
     gap: 2.2rem;
   }
+}
+.top__locations {
+  position: relative;
+}
+.top__locations::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  left: 0;
+  bottom: -0.3rem;
+  background-color: #1A453E;
+  transition: all 0.5s ease-in;
+}
+.top__locations:hover::before {
+  color: #1A453E;
+  width: 100%;
 }
 .top__locations a {
   display: flex;
@@ -120,6 +167,10 @@ body {
 }
 .top__socmedia-item {
   padding-left: 0.75rem;
+  transition: all 0.5s ease-in;
+}
+.top__socmedia-item:hover {
+  transform: scale(1.3);
 }
 .top__socmedia-img {
   width: 1.5rem;
@@ -182,10 +233,21 @@ body {
   text-transform: uppercase;
   font-size: 1rem;
   transition: all 0.5s ease-in;
+  position: relative;
 }
-.header__nav-link:hover {
+.header__nav-link::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  left: 0;
+  bottom: -0.3rem;
+  background-color: #1A453E;
+  transition: all 0.5s ease-in;
+}
+.header__nav-link:hover::before {
   color: #1A453E;
-  border-bottom: 1px solid #1A453E;
+  width: 100%;
 }
 .header__menu-icons {
   display: flex;
@@ -1739,6 +1801,12 @@ body {
   .footer .socmedia__img {
     max-width: 1.5rem;
   }
+}
+.footer .socmedia__item {
+  transition: all 0.5s ease-in;
+}
+.footer .socmedia__item:hover {
+  transform: scale(1.3);
 }
 .footer__part-2 {
   display: flex;
