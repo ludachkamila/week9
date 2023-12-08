@@ -1907,6 +1907,103 @@ body {
   height: auto;
 }
 
+.offer-page {
+  padding-bottom: 0;
+}
+.offer-page__item {
+  color: #3B3B3B;
+  font-size: 0.625rem;
+}
+.offer-page__title {
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+  font-size: 2.5rem;
+  line-height: 2.93rem;
+  color: #3B3B3B;
+}
+@media screen and (max-width: 768px) {
+  .offer-page__title {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    line-height: 2.34rem;
+  }
+}
+@media screen and (max-width: 376px) {
+  .offer-page__title {
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    font-size: 1.25rem;
+    line-height: 1.46rem;
+  }
+}
+
+.offer-page-catalogue {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 0.5rem;
+  row-gap: 2.5rem;
+  margin-bottom: 6rem;
+}
+@media screen and (max-width: 768px) {
+  .offer-page-catalogue {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0.5rem;
+    row-gap: 1.5rem;
+    margin-bottom: 4.5rem;
+  }
+}
+@media screen and (max-width: 376px) {
+  .offer-page-catalogue {
+    grid-template-columns: 1fr;
+    row-gap: 0.5rem;
+    margin-bottom: 3.5rem;
+  }
+}
+.offer-page-catalogue__item {
+  position: relative;
+  transition: all 0.5s ease-in;
+}
+.offer-page-catalogue__item:hover {
+  transform: scale(0.95);
+}
+.offer-page-catalogue__image {
+  width: 100%;
+  border-radius: 0.5rem;
+  transition: all 0.5s ease-in;
+}
+.offer-page-catalogue__button {
+  margin-top: 1rem;
+  border: #EFCF2C;
+  background-color: #EFCF2C;
+  color: #3B3B3B;
+  font-size: 0.75rem;
+  padding: 0.3rem 1rem 0.3rem 1.25rem;
+  border-radius: 2rem 0rem 0rem 2rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.offer-page-catalogue__text {
+  color: #FFFFFF;
+  font-size: 1rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+}
+@media screen and (max-width: 980px) {
+  .offer-page-catalogue__text {
+    font-size: 0.875rem;
+  }
+}
+@media screen and (max-width: 376px) {
+  .offer-page-catalogue__text {
+    font-size: 0.5rem;
+  }
+}
+
 /*general styles*/
 html {
   scroll-behavior: smooth;

@@ -1,0 +1,93 @@
+.offer-page{
+    padding-bottom: 0;
+
+    &__item{
+        color: $grey;
+        font-size: 0.625rem;
+    }
+
+    &__title{
+        padding-top: 1.5rem;
+        padding-bottom: 2rem;
+        font-size: 2.5rem;
+        line-height: 2.93rem;
+        color: $grey;
+
+        @media screen and (max-width: $tablet) {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            font-size: 2rem;
+            line-height: 2.34rem;
+        }
+
+        @media screen and (max-width: $mobile) {
+            padding-top: 0.5rem;
+            padding-bottom: 1rem;
+            font-size: 1.25rem;
+            line-height: 1.46rem;
+        }
+    }
+}
+
+.offer-page-catalogue{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 0.5rem;
+    row-gap: 2.5rem;
+    margin-bottom: 6rem;
+
+    @media screen and (max-width: $tablet) {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 0.5rem;
+        row-gap: 1.5rem;
+        margin-bottom: 4.5rem;
+    }
+
+    @media screen and (max-width: $mobile) {
+        grid-template-columns: 1fr;
+        row-gap: 0.5rem;
+        margin-bottom: 3.5rem;
+    }
+
+    &__item{
+        position: relative;
+        @include animation-scale-min;
+    }
+
+    &__image{
+        width: 100%;
+        border-radius: 0.5rem;
+        transition: all 0.5s ease-in;
+    }
+
+    &__button{
+        margin-top: 1rem;
+        border: #EFCF2C;
+        background-color: #EFCF2C;
+        color: $grey;
+        font-size: 0.75rem;
+        padding: 0.3rem 1rem 0.3rem 1.25rem ;
+        border-radius: 2rem 0rem 0rem 2rem;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    &__text{
+        color: $white;
+        font-size: 1rem;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+
+        @media screen and (max-width: $large-tablet) {
+            font-size: 0.875rem;
+        }
+
+        @media screen and (max-width: $mobile) {
+            font-size: 0.5rem;
+        }
+    }
+}
