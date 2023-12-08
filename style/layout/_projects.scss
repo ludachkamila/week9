@@ -4,20 +4,20 @@
 }
 
 .projects__text {
-  margin-bottom: 1.6rem;
+  padding-bottom: 1.4rem;
   font-size: 2.5rem;
   line-height: 1.2;
 
   @media screen and (max-width: $tablet) {
     font-size: 2rem;
-    margin-bottom: 1rem;
+    padding-bottom: 1rem;
   }
+
   @media screen and (max-width: $large-mobile) {
     font-size: 2rem;
-    margin-bottom: 1rem;
   }
+
   @media screen and (max-width: $mobile) {
-    margin-top: 0.3rem;
     font-size: 1.25rem;
     line-height: 1.2;
   }
@@ -31,6 +31,15 @@
   position: relative;
   display: flex;
   justify-content: center;
+  padding-bottom: 2.5rem;
+
+  @media screen and (max-width: $large-tablet) {
+    padding-bottom: 2.8rem;
+  }
+
+  @media screen and (max-width: $mobile) {
+    padding-bottom: 3.5rem;
+  }
 
   &-container {
     flex: 0 0 auto;

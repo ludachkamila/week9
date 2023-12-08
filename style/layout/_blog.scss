@@ -1,5 +1,5 @@
-.main__blog {
-    margin-top: -0.6rem;
+.blog {
+
 
     @media screen and (max-width: $mobile) {
       margin-top: -2.4rem;
@@ -9,7 +9,7 @@
       margin-top: -1.2rem;
     }
 
-    &-head {
+    &__heading {
         font-size: 2.5rem;
         margin-bottom: 1.4rem;
 
@@ -85,7 +85,7 @@
               font-size: 0.875rem;
               padding-top: 0.1rem;
             }
-          
+
 
             @media screen and (max-width: $mobile) {
               width: 11rem;
@@ -107,7 +107,7 @@
         z-index: 2;
         top: calc(50% - 3rem);
         max-width: 5%;
-      
+
         @media screen and (max-width: $large-tablet) {
           top: 25%;
         }
@@ -128,7 +128,7 @@
 
       &_left {
           left: -2.5%;
-          
+
           @media screen and (max-width: $tablet) {
             left: -3.8%;
           }
@@ -144,7 +144,7 @@
       }
       &_right {
           right: -2.5%;
-          
+
           @media screen and (max-width: $tablet) {
             right: -3.8%;
           }
@@ -160,4 +160,3 @@
       }
     }
   }
-  
