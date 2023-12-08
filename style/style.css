@@ -84,6 +84,7 @@ body {
 }
 .top__tel-order-call {
   text-transform: uppercase;
+  color: #3B3B3B;
 }
 @media screen and (max-width: 740px) {
   .top__tel-order-call {

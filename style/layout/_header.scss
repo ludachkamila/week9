@@ -30,6 +30,7 @@
 
     &-order-call {
       text-transform: uppercase;
+      color: $grey;
 
       @media screen and (max-width: $large-mobile) {
         display: none;
