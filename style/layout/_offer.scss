@@ -52,12 +52,25 @@
     &__item{
         position: relative;
         @include animation-scale-min;
+        @media screen and (max-width: $tablet) {
+            padding: 0px 0px 78% 0px;
+            overflow: hidden;
+        }
+        @media screen and (max-width: $mobile) {
+            padding: 0px 0px 58% 0px;
+        }
     }
 
     &__image{
         width: 100%;
         border-radius: 0.5rem;
         transition: all 0.5s ease-in;
+        @media screen and (max-width: $tablet) {
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            object-position: center;
+        }
     }
 
     &__button{
@@ -86,8 +99,12 @@
             font-size: 0.875rem;
         }
 
+        @media screen and (max-width: $tablet) {
+            font-size: 0.75rem;
+        }
+
         @media screen and (max-width: $mobile) {
-            font-size: 0.5rem;
+            font-size: 1rem;
         }
     }
 }
